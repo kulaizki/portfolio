@@ -4,7 +4,7 @@
       Hi, I'm <span class="text-blue-500">Fitz Angelo</span>
     </h1>
     <p class="mt-4 text-lg md:text-xl text-gray-300">
-      A passionate developer crafting elegant solutions and creative designs for the modern web.
+      A developer with a passion for problem-solving and psychology.
     </p>
     <div class="mt-6 flex justify-center space-x-4">
       <a
