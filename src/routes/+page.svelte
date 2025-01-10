@@ -69,7 +69,7 @@
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Technologies I Use</h2>
     <div class="flex flex-wrap justify-center gap-4">
       <div class="px-4 py-2 bg-gray-800 rounded-lg shadow-md hover:bg-blue-500 hover:text-white transition-all duration-300">
-        JavaScript
+        Typescript
       </div>
       <div class="px-4 py-2 bg-gray-800 rounded-lg shadow-md hover:bg-blue-500 hover:text-white transition-all duration-300">
         Node.js
