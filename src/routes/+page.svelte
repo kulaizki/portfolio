@@ -97,7 +97,7 @@
         href="https://github.com/kulaizki"
         target="_blank"
         rel="noopener noreferrer"
-        class="font-bold text-blue-200 hover:underline"
+        class="font-bold text-blue-300 hover:underline"
       >
         kulaizki
       </a>. All rights reserved.
