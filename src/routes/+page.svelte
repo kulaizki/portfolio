@@ -30,27 +30,43 @@
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">My Experience</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <div class="p-6 bg-white rounded-lg shadow-lg border border-transparent hover:border-blue-500 hover:shadow-xl transition-all duration-300">
+        <h3 class="text-xl font-semibold">Software Engineer</h3>
+        <p class="text-sm text-gray-600 mt-2">Farmtri, Aug 2024 - Mar 2025</p>
+        <ul class="mt-3 space-y-2 text-gray-700 text-sm">
+          <li>• Developed and optimized the company website.</li>
+          <li>• Managed full-stack development and hosting.</li>
+        </ul>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow-lg border border-transparent hover:border-blue-500 hover:shadow-xl transition-all duration-300">
+        <h3 class="text-xl font-semibold">Mobile Developer</h3>
+        <p class="text-sm text-gray-600 mt-2">Fit Senpai, Aug 2024 - Nov 2024</p>
+        <ul class="mt-3 space-y-2 text-gray-700 text-sm">
+          <li>• Led mobile app development and architecture.</li>
+          <li>• Implemented core features for mobile applications.</li>
+        </ul>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow-lg border border-transparent hover:border-blue-500 hover:shadow-xl transition-all duration-300">
+        <h3 class="text-xl font-semibold">Lead / CEO</h3>
+        <p class="text-sm text-gray-600 mt-2">GDGoC San Carlos, Aug 2023 - Present</p>
+        <ul class="mt-3 space-y-2 text-gray-700 text-sm">
+          <li>• Organized workshops and technical presentations.</li>
+          <li>• Secured partnerships and sponsorships, including Datacamp.</li>
+        </ul>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow-lg border border-transparent hover:border-blue-500 hover:shadow-xl transition-all duration-300">
         <h3 class="text-xl font-semibold">Software Developer Intern</h3>
-        <p class="text-sm text-gray-600 mt-2">ABC Tech, Jun 2023 - Dec 2023</p>
+        <p class="text-sm text-gray-600 mt-2">Symph, Jun 2024 - Aug 2024</p>
         <ul class="mt-3 space-y-2 text-gray-700 text-sm">
-          <li>• Developed scalable web applications using React.js.</li>
-          <li>• Optimized backend performance with Node.js and PostgreSQL.</li>
+          <li>• Contributed to unit testing and workflow optimization.</li>
+          <li>• Worked on multiple software development projects.</li>
         </ul>
       </div>
       <div class="p-6 bg-white rounded-lg shadow-lg border border-transparent hover:border-blue-500 hover:shadow-xl transition-all duration-300">
-        <h3 class="text-xl font-semibold">Freelance Web Developer</h3>
-        <p class="text-sm text-gray-600 mt-2">Jan 2022 - Present</p>
+        <h3 class="text-xl font-semibold">UI/UX Designer</h3>
+        <p class="text-sm text-gray-600 mt-2">Rethinkable, Oct 2023 - Jan 2024</p>
         <ul class="mt-3 space-y-2 text-gray-700 text-sm">
-          <li>• Designed and deployed responsive websites for clients.</li>
-          <li>• Implemented modern UI/UX principles.</li>
-        </ul>
-      </div>
-      <div class="p-6 bg-white rounded-lg shadow-lg border border-transparent hover:border-blue-500 hover:shadow-xl transition-all duration-300">
-        <h3 class="text-xl font-semibold">Hackathon Participant</h3>
-        <p class="text-sm text-gray-600 mt-2">Various Events, 2021 - Present</p>
-        <ul class="mt-3 space-y-2 text-gray-700 text-sm">
-          <li>• Built innovative projects under time constraints.</li>
-          <li>• Collaborated with multidisciplinary teams.</li>
+          <li>• Designed and implemented UI/UX improvements.</li>
+          <li>• Enhanced digital assets and presentation platforms.</li>
         </ul>
       </div>
     </div>
@@ -97,4 +113,3 @@
     </p>
   </div>
 </footer>
-
