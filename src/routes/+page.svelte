@@ -1,6 +1,7 @@
 <script>
   import ExperienceCard from '$lib/components/ExperienceCard.svelte';
   import TechItem from '$lib/components/TechItem.svelte';
+  import Footer from '$lib/components/Footer.svelte';
 </script>
 
 <!-- Hero -->
@@ -118,18 +119,4 @@
   </div>
 </section>
 
-<!-- Footer -->
-<footer class="py-6 bg-gray-800 text-white">
-  <div class="max-w-6xl mx-auto px-6 flex justify-center items-center">
-    <p class="text-sm">
-      &copy; 2025 <a
-        href="https://github.com/kulaizki"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="font-bold text-blue-400 hover:underline"
-      >
-        kulaizki
-      </a>. All rights reserved.
-    </p>
-  </div>
-</footer>
+<Footer />
