@@ -1,5 +1,6 @@
 <script>
   import ExperienceCard from '$lib/components/ExperienceCard.svelte';
+  import TechItem from '$lib/components/TechItem.svelte';
 </script>
 
 <section class="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white min-h-screen flex items-center justify-center">
@@ -96,24 +97,12 @@
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Technologies</h2>
     <div class="flex flex-wrap justify-center gap-4">
-      <div class="px-4 py-2 bg-gray-800 rounded-lg shadow-md hover:bg-blue-500 hover:text-white transition-all duration-300">
-        Typescript
-      </div>
-      <div class="px-4 py-2 bg-gray-800 rounded-lg shadow-md hover:bg-blue-500 hover:text-white transition-all duration-300">
-        Node.js
-      </div>
-      <div class="px-4 py-2 bg-gray-800 rounded-lg shadow-md hover:bg-blue-500 hover:text-white transition-all duration-300">
-        Python
-      </div>
-      <div class="px-4 py-2 bg-gray-800 rounded-lg shadow-md hover:bg-blue-500 hover:text-white transition-all duration-300">
-        React
-      </div>
-      <div class="px-4 py-2 bg-gray-800 rounded-lg shadow-md hover:bg-blue-500 hover:text-white transition-all duration-300">
-        Svelte
-      </div>
-      <div class="px-4 py-2 bg-gray-800 rounded-lg shadow-md hover:bg-blue-500 hover:text-white transition-all duration-300">
-        PostgreSQL
-      </div>
+      <TechItem techName="Typescript" />
+      <TechItem techName="Node.js" />
+      <TechItem techName="Python" />
+      <TechItem techName="React" />
+      <TechItem techName="Svelte" />
+      <TechItem techName="PostgreSQL" />
     </div>
   </div>
 </section>
