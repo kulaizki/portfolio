@@ -6,7 +6,7 @@
 <!-- Hero -->
 <section class="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white min-h-screen flex items-center justify-center">
   <div class="max-w-4xl px-6 text-center">
-    <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-4">
+    <h1 class="text-4xl md:text-7xl font-bold tracking-tight mb-4">
       Hi, I'm <span class="text-blue-500">Fitz Angelo</span>
     </h1>
     <p class="text-lg md:text-xl text-gray-300 mb-6">
