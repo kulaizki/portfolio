@@ -1,3 +1,7 @@
+<script>
+  import ExperienceCard from '$lib/components/ExperienceCard.svelte';
+</script>
+
 <section class="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white min-h-screen flex items-center justify-center">
   <div class="max-w-4xl px-6 flex flex-col md:flex-row items-center text-center md:gap-6">
     <div class="flex flex-col items-center">
@@ -22,7 +26,6 @@
           Contact Me
         </a>
       </div>
-
     </div>
   </div>
 </section>
@@ -31,48 +34,57 @@
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Experience</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <a href="https://farmtri.con" target="_blank">
-        <div class="p-6 bg-white rounded-lg shadow-lg border border-transparent hover:border-blue-500 hover:shadow-xl transition-all duration-300">
-          <h3 class="text-xl font-semibold">Software Engineer</h3>
-          <p class="text-sm text-gray-600 mt-2">Farmtri, Aug 2024 - Mar 2025</p>
-          <ul class="mt-3 space-y-2 text-gray-700 text-sm">
-            <li>• Developed and optimized the company website.</li>
-            <li>• Managed full-stack development and hosting.</li>
-          </ul>
-        </div>
-      </a>
-      <div class="p-6 bg-white rounded-lg shadow-lg border border-transparent hover:border-blue-500 hover:shadow-xl transition-all duration-300">
-        <h3 class="text-xl font-semibold">Mobile Developer</h3>
-        <p class="text-sm text-gray-600 mt-2">Fit Senpai, Aug 2024 - Nov 2024</p>
-        <ul class="mt-3 space-y-2 text-gray-700 text-sm">
-          <li>• Led mobile app development and architecture.</li>
-          <li>• Implemented core features for mobile applications.</li>
-        </ul>
-      </div>
-      <div class="p-6 bg-white rounded-lg shadow-lg border border-transparent hover:border-blue-500 hover:shadow-xl transition-all duration-300">
-        <h3 class="text-xl font-semibold">Lead</h3>
-        <p class="text-sm text-gray-600 mt-2">GDGoC San Carlos, Aug 2023 - Present</p>
-        <ul class="mt-3 space-y-2 text-gray-700 text-sm">
-          <li>• Organized workshops and technical presentations.</li>
-          <li>• Secured partnerships and sponsorships, including Datacamp.</li>
-        </ul>
-      </div>
-      <div class="p-6 bg-white rounded-lg shadow-lg border border-transparent hover:border-blue-500 hover:shadow-xl transition-all duration-300">
-        <h3 class="text-xl font-semibold">Software Developer Intern</h3>
-        <p class="text-sm text-gray-600 mt-2">Symph, Jun 2024 - Aug 2024</p>
-        <ul class="mt-3 space-y-2 text-gray-700 text-sm">
-          <li>• Contributed to unit testing and workflow optimization.</li>
-          <li>• Worked on multiple software development projects.</li>
-        </ul>
-      </div>
-      <div class="p-6 bg-white rounded-lg shadow-lg border border-transparent hover:border-blue-500 hover:shadow-xl transition-all duration-300">
-        <h3 class="text-xl font-semibold">UI/UX Designer</h3>
-        <p class="text-sm text-gray-600 mt-2">Rethinkable, Oct 2023 - Jan 2024</p>
-        <ul class="mt-3 space-y-2 text-gray-700 text-sm">
-          <li>• Designed and implemented UI/UX improvements.</li>
-          <li>• Enhanced digital assets and presentation platforms.</li>
-        </ul>
-      </div>
+      <!-- Replacing divs with ExperienceCard component -->
+      <ExperienceCard
+        title="Software Engineer"
+        company="Farmtri"
+        date="Aug 2024 - Mar 2025"
+        responsibilities={[
+          'Developed and optimized the company website.',
+          'Managed full-stack development and hosting.'
+        ]}
+        link="https://farmtri.con"
+      />
+      
+      <ExperienceCard
+        title="Mobile Developer"
+        company="Fit Senpai"
+        date="Aug 2024 - Nov 2024"
+        responsibilities={[
+          'Led mobile app development and architecture.',
+          'Implemented core features for mobile applications.'
+        ]}
+      />
+      
+      <ExperienceCard
+        title="Lead"
+        company="GDGoC San Carlos"
+        date="Aug 2023 - Present"
+        responsibilities={[
+          'Organized workshops and technical presentations.',
+          'Secured partnerships and sponsorships, including Datacamp.'
+        ]}
+      />
+      
+      <ExperienceCard
+        title="Software Developer Intern"
+        company="Symph"
+        date="Jun 2024 - Aug 2024"
+        responsibilities={[
+          'Contributed to unit testing and workflow optimization.',
+          'Worked on multiple software development projects.'
+        ]}
+      />
+      
+      <ExperienceCard
+        title="UI/UX Designer"
+        company="Rethinkable"
+        date="Oct 2023 - Jan 2024"
+        responsibilities={[
+          'Designed and implemented UI/UX improvements.',
+          'Enhanced digital assets and presentation platforms.'
+        ]}
+      />
     </div>
   </div>
 </section>
