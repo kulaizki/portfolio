@@ -34,7 +34,6 @@
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Experience</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Replacing divs with ExperienceCard component -->
       <ExperienceCard
         title="Software Engineer"
         company="Farmtri"
@@ -43,7 +42,7 @@
           'Developed and optimized the company website.',
           'Managed full-stack development and hosting.'
         ]}
-        link="https://farmtri.con"
+        link="https://farmtri.com"
       />
       
       <ExperienceCard
@@ -54,6 +53,7 @@
           'Led mobile app development and architecture.',
           'Implemented core features for mobile applications.'
         ]}
+        link="https://www.fitsenpai.com/"
       />
       
       <ExperienceCard
@@ -64,6 +64,7 @@
           'Organized workshops and technical presentations.',
           'Secured partnerships and sponsorships, including Datacamp.'
         ]}
+        link="https://gdg.community.dev/gdg-on-campus-university-of-san-carlos-cebu-philippines/"
       />
       
       <ExperienceCard
@@ -74,6 +75,7 @@
           'Contributed to unit testing and workflow optimization.',
           'Worked on multiple software development projects.'
         ]}
+        link="https://www.symph.co/"
       />
       
       <ExperienceCard
@@ -84,6 +86,7 @@
           'Designed and implemented UI/UX improvements.',
           'Enhanced digital assets and presentation platforms.'
         ]}
+        link="https://rethinkable.xyz/"
       />
     </div>
   </div>
