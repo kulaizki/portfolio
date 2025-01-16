@@ -8,7 +8,7 @@
 <Hero />
 
 <!-- Experience -->
-<section id="experience" class="py-12 bg-white text-gray-900">
+<section id="experience" class="py-12 bg-slate-200 text-gray-900">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Experience</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
