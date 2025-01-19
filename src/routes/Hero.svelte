@@ -9,7 +9,7 @@
     <div class="flex justify-center gap-6">
       <a
         href="#experience"
-        class="px-6 py-3 bg-sky-500 text-white rounded-full shadow-lg hover:bg-sky-700 transition-all duration-300"
+        class="px-6 py-3 bg-sky-500 text-white rounded-full shadow-lg hover:bg-sky-600 transition-all duration-300"
       >
         See My Work
       </a>
