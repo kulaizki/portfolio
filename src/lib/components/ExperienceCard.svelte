@@ -6,10 +6,14 @@
   export let link: string = '';
 </script>
 
-<a href={link} target="_blank" class="p-6 bg-white rounded-lg shadow-lg border border-transparent hover:border-blue-500 hover:shadow-xl transition-all duration-300">
-  <h3 class="text-xl font-semibold">{title}</h3>
-  <p class="text-sm text-gray-600 mt-2">{company}, {date}</p>
-  <ul class="mt-3 space-y-2 text-gray-700 text-sm">
+<a 
+  href={link} 
+  target="_blank" 
+  class="relative p-6 bg-gray-800 rounded-lg shadow-lg border-t-4 border-blue-500 border-gray-700 hover:bg-gray-700 hover:border-blue-500 hover:shadow-xl transition-all duration-300"
+>
+  <h3 class="text-xl font-semibold text-white">{title}</h3>
+  <p class="text-sm text-gray-400 mt-2">{company}, {date}</p>
+  <ul class="mt-3 space-y-2 text-gray-300 text-sm">
     {#each responsibilities as responsibility}
       <li>• {responsibility}</li>
     {/each}
