@@ -17,7 +17,7 @@
         company="Farmtri"
         date="Aug 2024 - Mar 2025"
         responsibilities={[
-          'Developed and optimized the company website.',
+          'Architectured, developed, and optimized the company website.',
           'Managed full-stack development and hosting.'
         ]}
         link="https://farmtri.com"
