@@ -1,9 +1,9 @@
-<script>
-  export let title;
-  export let company;
-  export let date;
-  export let responsibilities = [];
-  export let link = '';
+<script lang="ts">
+  export let title: string;
+  export let company: string;
+  export let date: string;
+  export let responsibilities: string[] = [];
+  export let link: string = '';
 </script>
 
 <a href={link} target="_blank" class="p-6 bg-white rounded-lg shadow-lg border border-transparent hover:border-blue-500 hover:shadow-xl transition-all duration-300">
