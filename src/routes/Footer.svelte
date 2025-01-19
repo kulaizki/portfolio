@@ -5,7 +5,7 @@
         href="https://github.com/kulaizki"
         target="_blank"
         rel="noopener noreferrer"
-        class="font-bold text-blue-400 hover:underline"
+        class="font-bold text-sky-400 hover:underline"
       >
         kulaizki
       </a>. All rights reserved.
