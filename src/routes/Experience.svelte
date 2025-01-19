@@ -1,8 +1,9 @@
-<script>
+<script lang="ts">
   import ExperienceCard from '$lib/components/ExperienceCard.svelte';
+  export let className: string = '';  
 </script>
 
-<section id="experience" class="py-20 bg-gradient-to-b from-slate-900 via-sky-600 to-sky-900 text-gray-100">
+<section id="experience" class="py-20 text-gray-100 {className}">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Experience</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
