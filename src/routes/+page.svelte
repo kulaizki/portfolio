@@ -4,6 +4,7 @@
   import Technologies from './Technologies.svelte';
   import Footer from './Footer.svelte';
   import Contact from './Contact.svelte';
+  import ScrollToTop from '$lib/components/ScrollToTop.svelte';
 </script>
 
 <Hero />
@@ -15,3 +16,5 @@
 </div>
 
 <Footer />
+
+<ScrollToTop />
