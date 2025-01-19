@@ -2,9 +2,9 @@
   import ExperienceCard from '$lib/components/ExperienceCard.svelte';
 </script>
 
-<section id="experience" class="py-12 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-gray-900">
+<section id="experience" class="py-20 bg-gradient-to-b from-slate-900 via-cyan-600 to-cyan-900 text-gray-100">
   <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-white">Experience</h2>
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Experience</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <ExperienceCard
         title="Software Engineer"

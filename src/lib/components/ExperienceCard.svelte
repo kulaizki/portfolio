@@ -9,7 +9,7 @@
 <a 
   href={link} 
   target="_blank" 
-  class="relative p-6 bg-gray-800 rounded-lg shadow-lg border-t-4 border-blue-500 border-gray-700 hover:bg-gray-700 hover:border-blue-500 hover:shadow-xl transition-all duration-300"
+  class="relative p-6 bg-gray-800 rounded-lg shadow-lg border-t-4 border-cyan-300 border-gray-700 hover:bg-gray-700 hover:border-cyan-200 hover:shadow-xl transition-all duration-300"
 >
   <h3 class="text-xl font-semibold text-white">{title}</h3>
   <p class="text-sm text-gray-400 mt-2">{company}, {date}</p>
