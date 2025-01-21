@@ -3,7 +3,7 @@
   export let className: string = '';
 </script>
 
-<section id="technologies" class="py-12 text-white {className}">
+<section id="technologies" class="py-20 text-white {className}">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Skills</h2>
     <div class="flex flex-wrap justify-center gap-6">

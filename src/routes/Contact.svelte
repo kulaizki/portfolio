@@ -2,7 +2,7 @@
   export let className: string = ''; 
 </script>
 
-<section id="contact" class="py-12 text-white {className}">
+<section id="contact" class="py-20 text-white {className}">
   <div class="max-w-6xl mx-auto px-6 flex flex-col items-center justify-center text-center">
     <h2 class="text-3xl md:text-4xl font-bold mb-8">Contact Me</h2>
     <p class="text-lg md:text-xl text-gray-300 mb-6">
