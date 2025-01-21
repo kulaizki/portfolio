@@ -14,18 +14,13 @@
       <SkillItem skillName="Expo" skillUrl="https://expo.dev/" />
       <SkillItem skillName="Supabase" skillUrl="https://supabase.io/" />
       <SkillItem skillName="Firebase" skillUrl="https://firebase.google.com/" />
-      <SkillItem skillName="Express" skillUrl="https://expressjs.com/" />
-      <SkillItem skillName="NestJS" skillUrl="https://nestjs.com/" />
       <SkillItem skillName="Gemini" skillUrl="https://www.gemini.com/" />
-      <SkillItem skillName="Jest" skillUrl="https://jestjs.io/" />
       <SkillItem skillName="Git" skillUrl="https://git-scm.com/" />
       <SkillItem skillName="Vercel" skillUrl="https://vercel.com/" />
       <SkillItem skillName="Linux" skillUrl="https://www.linux.org/" />
       <SkillItem skillName="AWS" skillUrl="https://aws.amazon.com/" />
       <SkillItem skillName="Python" skillUrl="https://www.python.org/" />
       <SkillItem skillName="SQL" skillUrl="https://www.mysql.com/" />
-      <SkillItem skillName="R" skillUrl="https://www.r-project.org/" />
-      <SkillItem skillName="Power BI" skillUrl="https://powerbi.microsoft.com/" />
       <SkillItem skillName="TensorFlow" skillUrl="https://www.tensorflow.org/" />
       <SkillItem skillName="PineScript" skillUrl="https://www.tradingview.com/pine-script-docs/en/v4/" />
       <SkillItem skillName="Figma" skillUrl="https://www.figma.com/" />
