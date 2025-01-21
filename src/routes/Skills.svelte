@@ -7,6 +7,7 @@
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Skills</h2>
     <div class="flex flex-wrap justify-center gap-6">
+      <SkillItem skillName="Svelte" skillUrl="https://svelte.dev/" />
       <SkillItem skillName="Next.js" skillUrl="https://nextjs.org/" />
       <SkillItem skillName="React" skillUrl="https://reactjs.org/" />
       <SkillItem skillName="React Native" skillUrl="https://reactnative.dev/" />
