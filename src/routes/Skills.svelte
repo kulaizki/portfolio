@@ -7,24 +7,22 @@
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Skills</h2>
     <div class="flex flex-wrap justify-center gap-6">
-      <SkillItem skillName="Svelte" skillUrl="https://svelte.dev/" />
-      <SkillItem skillName="Next.js" skillUrl="https://nextjs.org/" />
-      <SkillItem skillName="React" skillUrl="https://reactjs.org/" />
-      <SkillItem skillName="React Native" skillUrl="https://reactnative.dev/" />
-      <SkillItem skillName="Tailwind" skillUrl="https://tailwindcss.com/" />
-      <SkillItem skillName="Expo" skillUrl="https://expo.dev/" />
-      <SkillItem skillName="Supabase" skillUrl="https://supabase.io/" />
-      <SkillItem skillName="Firebase" skillUrl="https://firebase.google.com/" />
-      <SkillItem skillName="Gemini" skillUrl="https://www.gemini.com/" />
-      <SkillItem skillName="Git" skillUrl="https://git-scm.com/" />
-      <SkillItem skillName="Vercel" skillUrl="https://vercel.com/" />
-      <SkillItem skillName="Linux" skillUrl="https://www.linux.org/" />
-      <SkillItem skillName="AWS" skillUrl="https://aws.amazon.com/" />
-      <SkillItem skillName="Python" skillUrl="https://www.python.org/" />
-      <SkillItem skillName="SQL" skillUrl="https://www.mysql.com/" />
-      <SkillItem skillName="TensorFlow" skillUrl="https://www.tensorflow.org/" />
-      <SkillItem skillName="PineScript" skillUrl="https://www.tradingview.com/pine-script-docs/en/v4/" />
-      <SkillItem skillName="Figma" skillUrl="https://www.figma.com/" />
+      <SkillItem skillName="Svelte" skillUrl="https://svelte.dev/" skillIcon="https://skillicons.dev/icons?i=svelte" />
+      <SkillItem skillName="Next.js" skillUrl="https://nextjs.org/" skillIcon="https://skillicons.dev/icons?i=nextjs" />
+      <SkillItem skillName="React" skillUrl="https://reactjs.org/" skillIcon="https://skillicons.dev/icons?i=react" />
+      <SkillItem skillName="Tailwind" skillUrl="https://tailwindcss.com/" skillIcon="https://skillicons.dev/icons?i=tailwind" />
+      <SkillItem skillName="Typescript" skillUrl="https://www.typescriptlang.org/" skillIcon="https://skillicons.dev/icons?i=javascript" />
+      <SkillItem skillName="Javascript" skillUrl="https://www.javascript.com/" skillIcon="https://skillicons.dev/icons?i=typescript" />
+      <SkillItem skillName="Supabase" skillUrl="https://supabase.io/" skillIcon="https://skillicons.dev/icons?i=supabase" />
+      <SkillItem skillName="Firebase" skillUrl="https://firebase.google.com/" skillIcon="https://skillicons.dev/icons?i=firebase" />
+      <SkillItem skillName="Git" skillUrl="https://git-scm.com/" skillIcon="https://skillicons.dev/icons?i=git" />
+      <SkillItem skillName="Vercel" skillUrl="https://vercel.com/" skillIcon="https://skillicons.dev/icons?i=vercel" />
+      <SkillItem skillName="Linux" skillUrl="https://www.linux.org/" skillIcon="https://skillicons.dev/icons?i=linux" />
+      <SkillItem skillName="AWS" skillUrl="https://aws.amazon.com/" skillIcon="https://skillicons.dev/icons?i=aws" />
+      <SkillItem skillName="Python" skillUrl="https://www.python.org/" skillIcon="https://skillicons.dev/icons?i=python" />
+      <SkillItem skillName="SQL" skillUrl="https://www.mysql.com/" skillIcon="https://skillicons.dev/icons?i=mysql" />
+      <SkillItem skillName="TensorFlow" skillUrl="https://www.tensorflow.org/" skillIcon="https://skillicons.dev/icons?i=tensorflow" />
+      <SkillItem skillName="Figma" skillUrl="https://www.figma.com/" skillIcon="https://skillicons.dev/icons?i=figma" />
     </div>
   </div>
 </section>

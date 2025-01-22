@@ -1,13 +1,18 @@
-<script>
-  export let skillName = '';
-  export let skillUrl = '';
+<script lang="ts">
+  export let skillName: string = ''; 
+  export let skillUrl: string = '';  
+  export let skillIcon: string = ''; 
 </script>
 
 <a
   href={skillUrl}
   target="_blank"
   rel="noopener noreferrer"
-  class="px-4 py-2 bg-gray-600 rounded-lg shadow-md hover:bg-sky-500 text-white transition-all ease-in-out duration-300 hover:shadow-[0_0_15px_rgba(56,189,248,0.7)]"
+  class="p-4 bg-gray-600 rounded-lg shadow-md hover:bg-sky-500 text-white transition-all ease-in-out duration-300 hover:shadow-[0_0_15px_rgba(56,189,248,0.7)]"
 >
-  {skillName}
+  <img
+    src={skillIcon} 
+    alt={skillName}
+    class="w-12 h-12 inline-block"
+  />
 </a>
