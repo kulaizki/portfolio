@@ -11,7 +11,7 @@
       <SkillItem skillName="Next.js" skillUrl="https://nextjs.org/" />
       <SkillItem skillName="React" skillUrl="https://reactjs.org/" />
       <SkillItem skillName="React Native" skillUrl="https://reactnative.dev/" />
-      <SkillItem skillName="Tailwind CSS" skillUrl="https://tailwindcss.com/" />
+      <SkillItem skillName="Tailwind" skillUrl="https://tailwindcss.com/" />
       <SkillItem skillName="Expo" skillUrl="https://expo.dev/" />
       <SkillItem skillName="Supabase" skillUrl="https://supabase.io/" />
       <SkillItem skillName="Firebase" skillUrl="https://firebase.google.com/" />
