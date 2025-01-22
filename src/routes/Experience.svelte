@@ -38,7 +38,7 @@
           'Secured partnerships and sponsorships, including Datacamp.'
         ]}
         link="https://gdg.community.dev/gdg-on-campus-university-of-san-carlos-cebu-philippines/"
-        imageUrl="https://via.placeholder.com/300?text=GDGoC+San+Carlos"
+        imageUrl="/images/gdgoc-pfp.png"
       />
       <ExperienceCard
         title="Software Developer Intern"
@@ -60,7 +60,7 @@
           'Enhanced digital assets and presentation platforms.'
         ]}
         link="https://rethinkable.xyz/"
-        imageUrl="https://via.placeholder.com/300?text=Rethinkable"
+        imageUrl="/images/rethinkable-banner.jpg"
       />
     </div>
   </div>
