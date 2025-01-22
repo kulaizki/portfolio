@@ -16,6 +16,7 @@
           'Managed full-stack development and hosting.'
         ]}
         link="https://farmtri.com"
+        imageUrl="https://via.placeholder.com/300?text=Farmtri"
       />
       <ExperienceCard
         title="Mobile Developer"
@@ -26,6 +27,7 @@
           'Implemented core features for mobile applications.'
         ]}
         link="https://www.fitsenpai.com/"
+        imageUrl="https://via.placeholder.com/300?text=Fit+Senpai"
       />
       <ExperienceCard
         title="Lead"
@@ -36,6 +38,7 @@
           'Secured partnerships and sponsorships, including Datacamp.'
         ]}
         link="https://gdg.community.dev/gdg-on-campus-university-of-san-carlos-cebu-philippines/"
+        imageUrl="https://via.placeholder.com/300?text=GDGoC+San+Carlos"
       />
       <ExperienceCard
         title="Software Developer Intern"
@@ -46,6 +49,7 @@
           'Worked on multiple software development projects.'
         ]}
         link="https://www.symph.co/"
+        imageUrl="/images/symph-banner.png"
       />
       <ExperienceCard
         title="UI/UX Designer"
@@ -56,6 +60,7 @@
           'Enhanced digital assets and presentation platforms.'
         ]}
         link="https://rethinkable.xyz/"
+        imageUrl="https://via.placeholder.com/300?text=Rethinkable"
       />
     </div>
   </div>
