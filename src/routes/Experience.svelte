@@ -16,7 +16,7 @@
           'Managed full-stack development and hosting.'
         ]}
         link="https://farmtri.com"
-        imageUrl="https://via.placeholder.com/300?text=Farmtri"
+        imageUrl="/images/farmtri-banner.png"
       />
       <ExperienceCard
         title="Mobile Developer"
