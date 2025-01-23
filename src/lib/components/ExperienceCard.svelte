@@ -10,7 +10,7 @@
 <a
 	href={link}
 	target="_blank"
-	class="delay-50 relative rounded-lg border-t-4 border-gray-500 border-gray-700 bg-gray-800 p-2 shadow-lg transition-all duration-300 ease-in-out hover:border-sky-400 hover:bg-gray-700 hover:shadow-[0_0_15px_rgba(56,189,248,0.7)]"
+	class="delay-50 relative rounded-lg border-t-4 border-gray-500 border-gray-700 bg-gray-800 p-2 shadow-lg transition-all duration-300 ease-in-out hover:border-sky-400 hover:bg-gray-700 hover:shadow-[0_0_32px_rgba(56,189,248,0.7)]"
 >
 	<img src={imageUrl} alt={title} class="h-48 w-full rounded-lg object-cover" />
 	<div class="pb-4 px-4">
