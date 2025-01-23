@@ -27,7 +27,7 @@
           'Implemented core features for mobile applications.'
         ]}
         link="https://www.fitsenpai.com/"
-        imageUrl="https://via.placeholder.com/300?text=Fit+Senpai"
+        imageUrl="/images/fitsenpai-banner.png"
       />
       <ExperienceCard
         title="Lead"
