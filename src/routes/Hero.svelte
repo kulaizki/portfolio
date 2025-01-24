@@ -1,8 +1,31 @@
-<script>
-  import { fly } from 'svelte/transition';
+<script lang="ts">
+  import { cubicOut } from 'svelte/easing';
   import { onMount } from 'svelte';
-
-  let show = false;
+  
+  let show: boolean = false;
+  
+  function blurFly(node: HTMLElement, params: { 
+    delay?: number, 
+    duration?: number, 
+    easing?: (t: number) => number 
+  } = {}): { 
+    delay: number, 
+    duration: number, 
+    easing: (t: number) => number, 
+    css: (t: number) => string 
+  } {
+    const existingTransform = getComputedStyle(node).transform.replace('none', '');
+    return {
+      delay: params.delay || 0,
+      duration: params.duration || 1000,
+      easing: params.easing || cubicOut,
+      css: (t: number) => `
+        transform: ${existingTransform} translateY(${(1 - t) * 100}px);
+        opacity: ${t};
+        filter: blur(${(1 - t) * 10}px);
+      `
+    };
+  }
 
   onMount(() => {
     show = true;
@@ -13,7 +36,7 @@
   {#if show}
     <div
       class="max-w-4xl px-6 text-center"
-      in:fly={{ y: 100, duration: 1000 }}
+      transition:blurFly
     >
       <h1 class="text-4xl md:text-7xl font-bold tracking-tight mb-4">
         Hi, I'm <span class="text-sky-400">Fitz Angelo</span>
