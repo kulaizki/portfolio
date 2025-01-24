@@ -12,7 +12,7 @@
 <div class="bg-gradient-to-br from-gray-950 via-gray-800 to-black">
   <Experience className="border-y border-gray-700 pb-16" />
   <Skills className="border-b border-gray-700 pb-16" />
-  <Contact className="pb-16" />
+  <Contact className="" />
 </div>
 
 <Footer />
