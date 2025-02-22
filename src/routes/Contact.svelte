@@ -46,7 +46,7 @@
       transition:blurFly
     >
       <h2 class="text-3xl md:text-4xl font-bold mb-8">Contact Me</h2>
-      <p class="text-lg md:text-xl text-gray-300 mb-6">
+      <p class="text-lg md:text-xl text-gray-300 mb-6 text-center">
         Feel free to reach out if you'd like to connect or work together!
       </p>
       <a
