@@ -49,7 +49,7 @@
 			<h2 class="mb-16 text-center text-3xl font-bold md:text-4xl">Experience</h2>
 			<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 				<ExperienceCard
-					title="Software Engineer"
+					title="Senior Software Engineer"
 					company="Farmtri"
 					date="Aug 2024 - Mar 2025"
 					responsibilities={[
