@@ -5,17 +5,17 @@
     {
       name: 'nexleague',
       description: 'An AI-powered League of Legends profile analyzer providing personalized performance insights & coaching.',
-      url: 'https://github.com/kulaizki/nexleague'
+      url: 'https://nexleague.vercel.app/'
     },
     {
       name: 'z1',
       description: 'An AI-powered Dota 2 profile analyzer providing personalized performance insights & coaching.',
-      url: 'https://github.com/kulaizki/z1'
+      url: 'https://z1-dota.vercel.app/'
     },
     {
       name: 'Neurotypical vs. ASD',
       description: 'An app that visualizes Neurotypical vs. Autism Brain Disorder Brain Connectivity using the Harvard-Oxford atlases.',
-      url: 'https://github.com/kulaizki/neurotypical-vs-asd'
+      url: 'https://neurotypical-vs-asd.streamlit.app/'
     }
   ];
 </script>
