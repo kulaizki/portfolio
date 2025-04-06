@@ -1,18 +1,15 @@
 <script lang="ts">
-  export let skillName: string = ''; 
-  export let skillUrl: string = '';  
-  export let skillIcon: string = ''; 
+  import type { Skill } from '$lib/types';
+
+  export let skill: Skill;
 </script>
 
-<a
-  href={skillUrl}
-  target="_blank"
+<a 
+  href={`https://www.google.com/search?q=${skill.name}`} 
+  target="_blank" 
   rel="noopener noreferrer"
-  class="p-4 bg-gray-700 rounded-lg shadow-md hover:bg-sky-500 text-white transition-all ease-in-out duration-300 hover:shadow-[0_0_15px_rgba(56,189,248,0.7)]"
+  class="flex transform flex-col items-center justify-center rounded-lg bg-gray-700 p-4 shadow-md transition duration-300 ease-in-out hover:-translate-y-1 hover:bg-gray-600"
+  title={skill.name}
 >
-  <img
-    src={skillIcon} 
-    alt={skillName}
-    class="w-12 h-12 inline-block"
-  />
+  <img src={skill.icon} alt={skill.name} class="h-10 w-10 object-contain" />
 </a>
