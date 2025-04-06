@@ -16,6 +16,6 @@ export interface Experience {
 
 export interface Skill {
   name: string;
-  icon: string;
+  icon?: string;
   category: 'Languages' | 'Frameworks' | 'Databases' | 'Tools';
 } 
