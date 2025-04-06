@@ -6,21 +6,21 @@ export const projects: Project[] = [
     description:
       'Uncover your League of Legends potential with AI-driven insights and tailored performance analysis.',
     url: 'https://nexleague.vercel.app/',
-    imageUrl: '/images/projects/nexleague-1.png'
+    imageUrl: '/projects/nexleague-1.png'
   },
   {
     name: 'z1',
     description:
       'Master Dota 2 with personalized AI-powered gameplay analytics and strategic guidance.',
     url: 'https://z1-dota.vercel.app/',
-    imageUrl: '/images/projects/z1-1.png'
+    imageUrl: '/projects/z1-1.png'
   },
   {
     name: 'Neurotypical vs. ASD',
     description:
       'An app that visualizes Neurotypical vs. Autism Brain Disorder Brain Connectivity using the Harvard-Oxford atlases.',
     url: 'https://neurotypical-vs-asd.streamlit.app/',
-    imageUrl: '/images/projects/neuro-vs-asd-1.png'
+    imageUrl: '/projects/neuro-vs-asd-1.png'
   }
 ];
 
@@ -34,7 +34,7 @@ export const experiences: Experience[] = [
       'Managed full-stack development and hosting.'
     ],
     link: 'https://farmtri.com',
-    imageUrl: '/images/farmtri-banner.png'
+    imageUrl: '/experiences/farmtri-banner.png'
   },
   {
     title: 'Mobile Developer',
@@ -45,7 +45,7 @@ export const experiences: Experience[] = [
       'Implemented core features for the company mobile application.'
     ],
     link: 'https://www.fitsenpai.com/',
-    imageUrl: '/images/fitsenpai-banner.png'
+    imageUrl: '/experiences/fitsenpai-banner.png'
   },
   {
     title: 'Software Developer Intern',
@@ -56,7 +56,7 @@ export const experiences: Experience[] = [
       'Contributed to full-stack dev, testing, and workflow optimization.'
     ],
     link: 'https://www.symph.co/',
-    imageUrl: '/images/symph-banner.png'
+    imageUrl: '/experiences/symph-banner.png'
   },
   {
     title: 'UI/UX Designer',
@@ -67,7 +67,7 @@ export const experiences: Experience[] = [
       'Secured designs and presentations loved by company stakeholders.'
     ],
     link: 'https://rethinkable.xyz/',
-    imageUrl: '/images/rethinkable-banner.jpg'
+    imageUrl: '/experiences/rethinkable-banner.jpg'
   },
   {
     title: 'Lead',
@@ -78,7 +78,7 @@ export const experiences: Experience[] = [
       'Secured partnerships and sponsorships, including Datacamp.'
     ],
     link: 'https://gdg.community.dev/gdg-on-campus-university-of-san-carlos-cebu-philippines/',
-    imageUrl: '/images/gdgoc-pfp.png'
+    imageUrl: '/experiences/gdgoc-pfp.png'
   }
 ];
 
