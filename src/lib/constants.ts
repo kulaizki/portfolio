@@ -6,21 +6,21 @@ export const projects: Project[] = [
     description:
       'Uncover your League of Legends potential with AI-driven insights and tailored performance analysis.',
     url: 'https://nexleague.vercel.app/',
-    imageUrl: '/projects/nexleague-1-min.png'
+    imageUrl: '/projects/nexleague-1-min.webp'
   },
   {
     name: 'z1',
     description:
       'Master Dota 2 with personalized AI-powered gameplay analytics and strategic guidance.',
     url: 'https://z1-dota.vercel.app/',
-    imageUrl: '/projects/z1-1-min.png'
+    imageUrl: '/projects/z1-1-min.webp'
   },
   {
     name: 'Neurotypical vs. ASD',
     description:
       'An app that visualizes Neurotypical vs. Autism Brain Disorder Brain Connectivity using the Harvard-Oxford atlases.',
     url: 'https://neurotypical-vs-asd.streamlit.app/',
-    imageUrl: '/projects/neuro-vs-asd-1-min.png'
+    imageUrl: '/projects/neuro-vs-asd-1-min.webp'
   }
 ];
 
