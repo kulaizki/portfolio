@@ -4,14 +4,14 @@ export const projects: Project[] = [
   {
     name: 'nexleague',
     description:
-      'An AI-powered League of Legends profile analyzer providing personalized performance insights & coaching.',
+      'Uncover your League of Legends potential with AI-driven insights and tailored performance analysis.',
     url: 'https://nexleague.vercel.app/',
     imageUrl: '/images/projects/nexleague-1.png'
   },
   {
     name: 'z1',
     description:
-      'An AI-powered Dota 2 profile analyzer providing personalized performance insights & coaching.',
+      'Master Dota 2 with personalized AI-powered gameplay analytics and strategic guidance.',
     url: 'https://z1-dota.vercel.app/',
     imageUrl: '/images/projects/z1-1.png'
   },
