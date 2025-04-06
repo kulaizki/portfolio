@@ -47,7 +47,8 @@
       class="mx-auto max-w-6xl px-6" 
       transition:blurFly
     >
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Skills</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Skills</h2>
+      <p class="text-center text-lg text-gray-400 mb-16">A collection of technologies and tools I work with.</p>
       <div class="flex flex-wrap justify-center gap-4">
         {#each skills as skill}
           <SkillItem {skill} />
