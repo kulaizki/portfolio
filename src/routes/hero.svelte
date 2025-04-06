@@ -32,7 +32,7 @@
   });
 </script>
 
-<section class="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white min-h-screen flex items-center justify-center">
+<section class="bg-gradient-to-br from-gray-950 via-gray-800 to-black text-white min-h-screen flex items-center justify-center">
   {#if show}
     <div
       class="max-w-4xl px-6 text-center"
