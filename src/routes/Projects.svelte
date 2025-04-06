@@ -1,6 +1,6 @@
 <script lang="ts">
   import { projects } from '$lib/constants';
-  import ProjectItem from '$lib/components/ProjectItem.svelte';
+  import ProjectItem from '$lib/components/project-item.svelte';
 
   export let className: string = '';
 </script>

@@ -1,6 +1,6 @@
 <script lang="ts">
-  import SkillItem from "$lib/components/SkillItem.svelte";
-  import { skills } from "$lib/constants"; // Import data
+  import SkillItem from "$lib/components/skill-item.svelte";
+  import { skills } from "$lib/constants"; 
   export let className: string = '';
   import { cubicOut } from "svelte/easing";
   import { inview } from 'svelte-inview';

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ExperienceCard from '$lib/components/ExperienceCard.svelte';
+	import ExperienceCard from '$lib/components/experience-card.svelte';
 	import { experiences } from '$lib/constants'; // Import data
 	export let className: string = '';
 	import { cubicOut } from 'svelte/easing';
