@@ -6,14 +6,14 @@ export const projects: Project[] = [
     description:
       'Uncover your League of Legends potential with AI-driven insights and tailored performance analysis.',
     url: 'https://nexleague.vercel.app/',
-    imageUrl: '/projects/nexleague-1-min.webp'
+    imageUrl: '/projects/nexleague-min.webp'
   },
   {
     name: 'z1',
     description:
       'Master Dota 2 with personalized AI-powered gameplay analytics and strategic guidance.',
     url: 'https://z1-dota.vercel.app/',
-    imageUrl: '/projects/z1-1-min.webp'
+    imageUrl: '/projects/z1-min.webp'
   },
   {
     name: 'Neurotypical vs. ASD',
