@@ -5,3 +5,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  @apply bg-gray-950;
+}
