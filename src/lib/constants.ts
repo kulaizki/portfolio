@@ -116,7 +116,8 @@ const rawSkills = [
   { skillName: 'Docker', skillUrl: 'https://www.docker.com/', skillIcon: 'https://skillicons.dev/icons?i=docker' },
   { skillName: 'Cloudflare', skillUrl: 'https://www.cloudflare.com/', skillIcon: 'https://skillicons.dev/icons?i=cloudflare' },
   { skillName: 'n8n', skillUrl: 'https://n8n.io/', skillIcon: '/images/n8n-logo.jpg' },
-  { skillName: 'GCP', skillUrl: 'https://cloud.google.com/', skillIcon: 'https://skillicons.dev/icons?i=gcp' }
+  { skillName: 'GCP', skillUrl: 'https://cloud.google.com/', skillIcon: 'https://skillicons.dev/icons?i=gcp' },
+  { skillName: 'Gemini', skillUrl: 'https://gemini.google.com/', skillIcon: '/images/gemini-icon-logo.png' },
 ];
 
 export const skills: Skill[] = rawSkills.map(skill => ({
