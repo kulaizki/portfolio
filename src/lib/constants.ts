@@ -19,7 +19,7 @@ export const projects: Project[] = [
     name: 'echo',
     description:
       'An AI-powered web app designed to be a space for users to explore their emotions through guided conversation.',
-    url: 'https://fitzsixto.com',
+    url: 'https://echobuddy.vercel.app',
     imageUrl: '/projects/echo-min.png'
   },
   {
