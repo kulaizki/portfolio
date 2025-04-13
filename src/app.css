@@ -6,6 +6,8 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  @apply bg-gray-950;
+html, body {
+	font-family: 'Open Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
