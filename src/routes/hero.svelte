@@ -39,7 +39,7 @@
       transition:blurFly
     >
       <h1 class="text-4xl md:text-7xl font-bold tracking-tight mb-4">
-        Hi, I'm <span class="text-sky-400">Fitz Angelo</span>
+        Hi, I'm <span class="text-sky-400">Fitzsixto</span>
       </h1>
       <p class="text-lg md:text-xl text-gray-300 mb-6">
         A developer with a passion for problem-solving and neuroscience.
