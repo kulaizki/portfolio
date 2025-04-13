@@ -18,7 +18,7 @@ export const projects: Project[] = [
   {
     name: 'echo',
     description:
-      'https://github.com/kulaizki/echo',
+      'An AI-powered web app designed to be a space for users to explore their emotions through guided conversation.',
     url: 'https://fitzsixto.com',
     imageUrl: '/projects/echo-min.png'
   },
