@@ -2,13 +2,6 @@ import type { Project, Experience, Skill } from './types';
 
 export const projects: Project[] = [
   {
-    name: 'nexleague',
-    description:
-      'Uncover your League of Legends potential with AI-driven insights and tailored performance analysis.',
-    url: 'https://nexleague.vercel.app/',
-    imageUrl: '/projects/nexleague-min.webp'
-  },
-  {
     name: 'z1',
     description:
       'Master Dota 2 with personalized AI-powered gameplay analytics and strategic guidance.',
@@ -16,12 +9,26 @@ export const projects: Project[] = [
     imageUrl: '/projects/z1-min.webp'
   },
   {
+    name: 'nexleague',
+    description:
+      'Uncover your League of Legends potential with AI-driven insights and tailored performance analysis.',
+    url: 'https://nexleague.vercel.app/',
+    imageUrl: '/projects/nexleague-min.webp'
+  },
+  {
+    name: 'echo',
+    description:
+      'https://github.com/kulaizki/echo',
+    url: 'https://fitzsixto.com',
+    imageUrl: '/projects/echo-min.png'
+  },
+  {
     name: 'Neurotypical vs. ASD',
     description:
       'An app that visualizes Neurotypical vs. Autism Brain Disorder Brain Connectivity using the Harvard-Oxford atlases.',
     url: 'https://neurotypical-vs-asd.streamlit.app/',
-    imageUrl: '/projects/neuro-vs-asd-1-min.webp'
-  }
+    imageUrl: '/projects/neuro-vs-asd-min.webp'
+  },
 ];
 
 export const experiences: Experience[] = [
