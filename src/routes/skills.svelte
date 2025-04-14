@@ -34,36 +34,34 @@
 <section 
   id="skills" 
   class="py-20 text-white overflow-hidden {className}"
-	use:inview={{ threshold: 0.1 }}
+	use:inview={{ threshold: 0.1, unobserveOnEnter: true }}
 	on:inview_change={(event) => {
-    if (!hasAnimated) {
-      isInView = event.detail.inView;
-      if (isInView) hasAnimated = true;
+    if (event.detail.inView && !hasAnimated) {
+      isInView = true;
+      hasAnimated = true;
     }
   }}
 >
-  {#if isInView}
-    <div 
-      class="mx-auto max-w-6xl px-6"
-      transition:blurFly
-    >
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 bg-gradient-to-r from-sky-300 to-sky-500 bg-clip-text text-transparent pb-1">Skills</h2>
-      <p class="text-center text-lg text-gray-400 mb-12">Technologies and tools I frequently use.</p> 
-    </div>
-    
-    <div class="relative flex" aria-label="Scrolling skill icons">
-      <div class="marquee">
-        <div class="marquee-content scroll-left py-2">
-          {#each skills as skill (skill.name)}
-            <SkillItem {skill} />
-          {/each}
-          {#each skills as skill (skill.name + '-clone')}
-            <SkillItem {skill} />
-          {/each}
-        </div>
+  <div class="mx-auto max-w-6xl px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 bg-gradient-to-r from-sky-300 to-sky-500 bg-clip-text text-transparent pb-1">Skills</h2>
+    <p class="text-center text-lg text-gray-400 mb-12">Technologies and tools I frequently use.</p> 
+  </div>
+  
+  <div 
+    class="relative flex transition-opacity duration-1000 {isInView ? 'opacity-100' : 'opacity-0'}"
+    aria-label="Scrolling skill icons"
+  >
+    <div class="marquee">
+      <div class="marquee-content scroll-left">
+        {#each skills as skill (skill.name)}
+          <SkillItem {skill} />
+        {/each}
+        {#each skills as skill (skill.name + '-clone')}
+          <SkillItem {skill} />
+        {/each}
       </div>
     </div>
-  {/if}
+  </div>
 </section>
 
 <style>
@@ -77,10 +75,10 @@
 
   .marquee-content {
     display: flex;
-    width: max-content; /* Fit all items */
+    width: max-content; 
     flex-shrink: 0;
     align-items: center;
-    will-change: transform; /* Performance hint */
+    will-change: transform; 
   }
 
   .scroll-left {
@@ -89,10 +87,9 @@
 
   @keyframes scroll-left {
     0% { transform: translateX(0%); }
-    100% { transform: translateX(-50%); } /* Scroll by half the duplicated width */
+    100% { transform: translateX(-50%); } 
   }
 
-  /* Optional: Pause on hover */
   .marquee:hover .marquee-content {
     animation-play-state: paused;
   }
