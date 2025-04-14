@@ -46,8 +46,8 @@
       class="max-w-4xl px-6 text-center"
       transition:blurFly
     >
-      <h1 class="text-4xl md:text-7xl font-bold tracking-tight mb-4">
-        Hi, I'm <span class="bg-gradient-to-r from-sky-300 to-sky-600 bg-clip-text text-transparent">Fitzsixto</span>
+      <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-4 bg-gradient-to-r from-sky-300 to-sky-600 bg-clip-text text-transparent">
+        Fitzsixto
       </h1>
       <p class="text-lg md:text-xl text-gray-300 mb-8">
         A developer with a passion for problem-solving and neuroscience.
