@@ -4,7 +4,7 @@
 </script>
 
 <div 
-	class="flex flex-col rounded-lg bg-gradient-to-br from-gray-800 via-slate-900 to-gray-800 shadow-lg overflow-hidden h-full border border-sky-900/50 transition-transform duration-300 hover:scale-105"
+	class="flex flex-col rounded-lg bg-gradient-to-br from-gray-800 via-slate-900 to-gray-800 shadow-lg overflow-hidden h-full border border-sky-900/50 hover:scale-105 hover:border-sky-400 transition-all duration-300"
 >
 	{#if experience.imageUrl}
 		<img src={experience.imageUrl} alt={`Logo for ${experience.company}`} class="w-full h-48 object-cover" />
