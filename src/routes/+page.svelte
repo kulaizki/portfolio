@@ -10,7 +10,7 @@
 
 <Hero />
 
-<div class="bg-gradient-to-br from-gray-950 via-gray-800 to-black">
+<div class="bg-gradient-to-br from-gray-950 via-gray-900 to-black">
   <Skills className="border-y border-gray-700 pb-16" />
   <Experience className="border-b border-gray-700 pb-16" />
   <Projects className="border-b border-gray-700 pb-16" />
