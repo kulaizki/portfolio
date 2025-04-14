@@ -4,17 +4,15 @@
   export let project: Project;
 </script>
 
-<a
-  href={project.url}
-  target="_blank"
-  rel="noopener noreferrer"
-  class="block transform rounded-lg border-t-4 border-gray-500 border-gray-700 bg-gray-800 p-2 shadow-lg transition-all duration-300 ease-in-out hover:border-sky-400 hover:bg-gray-700 hover:shadow-[0_0_32px_rgba(56,189,248,0.7)]"
->
+<div class="flex flex-col rounded-lg bg-gradient-to-br from-gray-800 via-slate-900 to-gray-800 shadow-lg overflow-hidden h-full border border-sky-900/50 hover:scale-105 hover:border-sky-400 transition-all duration-300">
   {#if project.imageUrl}
-    <img src={project.imageUrl} alt={project.name} class="mb-4 h-48 w-full rounded-lg object-cover" />
+    <img src={project.imageUrl} alt={`Screenshot of ${project.name}`} class="w-full h-48 object-cover" />
   {/if}
-  <div class="pb-4 px-4">
-    <h3 class="text-xl font-semibold text-gray-100">{project.name}</h3>
-    <p class="mt-2 text-sm text-gray-400">{project.description}</p>
+  <div class="p-6 flex flex-col flex-grow">
+    <h3 class="text-xl font-semibold text-sky-300 mb-2">{project.name}</h3>
+    <p class="text-gray-400 text-sm mb-4 flex-grow">{project.description}</p>
+    <div class="mt-auto flex justify-end gap-3 pt-4 border-t border-gray-700/50">
+      <a href={project.url} target="_blank" rel="noopener noreferrer" class="text-sm text-sky-400 hover:text-sky-300 transition-colors duration-200">Visit Project</a>
+    </div>
   </div>
-</a> 
+</div> 
