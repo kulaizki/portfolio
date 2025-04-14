@@ -123,5 +123,6 @@ const rawSkills = [
 export const skills: Skill[] = rawSkills.map(skill => ({
   name: skill.skillName,
   icon: skill.skillIcon, 
+  url: skill.skillUrl,
   category: getSkillCategory(skill.skillName)
 })); 
