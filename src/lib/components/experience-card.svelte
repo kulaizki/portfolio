@@ -3,19 +3,24 @@
 	export let experience: Experience;
 </script>
 
-<a
-	href={experience.link}
-	target="_blank"
-	class="delay-50 relative rounded-lg border-t-4 border-gray-500 border-gray-700 bg-gray-800 p-2 shadow-lg transition-all duration-300 ease-in-out hover:border-sky-400 hover:bg-gray-700 hover:shadow-[0_0_32px_rgba(56,189,248,0.7)]"
+<div 
+	class="flex flex-col rounded-lg bg-gradient-to-br from-gray-800 via-slate-900 to-gray-800 shadow-lg overflow-hidden h-full border border-sky-900/50 transition-transform duration-300 hover:scale-105"
 >
-	<img src={experience.imageUrl} alt={experience.title} class="h-48 w-full rounded-lg object-cover" />
-	<div class="pb-4 px-4">
-		<h3 class="mt-4 text-xl font-semibold text-white">{experience.title}</h3>
-		<p class="mt-2 text-sm text-gray-400">{experience.company}, {experience.date}</p>
-		<ul class="mt-3 space-y-2 text-sm text-gray-300">
+	{#if experience.imageUrl}
+		<img src={experience.imageUrl} alt={`Logo for ${experience.company}`} class="w-full h-48 object-cover" />
+	{/if}
+	<div class="p-6 flex flex-col flex-grow">
+		<h3 class="text-xl font-semibold text-sky-300 mb-1">{experience.title}</h3>
+		<p class="text-sm font-medium text-gray-400 mb-3">{experience.company} <span class="text-gray-500">({experience.date})</span></p>
+		<ul class="text-sm text-gray-300 space-y-1 list-disc list-inside mb-4 flex-grow">
 			{#each experience.responsibilities as responsibility}
-				<li>• {responsibility}</li>
+				<li>{responsibility}</li>
 			{/each}
 		</ul>
+		<div class="mt-auto flex justify-end gap-3 pt-4 border-t border-gray-700/50">
+			{#if experience.link}
+				<a href={experience.link} target="_blank" rel="noopener noreferrer" class="text-sm text-sky-400 hover:text-sky-300 transition-colors duration-200">Visit Company</a>
+			{/if}
+		</div>
 	</div>
-</a>
+</div>
