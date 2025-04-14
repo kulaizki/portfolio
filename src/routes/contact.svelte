@@ -19,7 +19,7 @@
   <div 
     class="max-w-6xl mx-auto px-6 flex flex-col items-center transition-opacity duration-1000 {isInView ? 'opacity-100' : 'opacity-0'}" 
   >
-    <h2 class="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-sky-300 to-sky-500 bg-clip-text text-transparent pb-1">Contact Me</h2>
+    <h2 class="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-sky-300 to-sky-500 bg-clip-text text-transparent pb-1">Contact</h2>
     <p class="text-md md:text-xl text-gray-300 mb-6 text-center">
       Feel free to reach out if you'd like to connect or work together!
     </p>
