@@ -47,13 +47,15 @@
       <div class="flex justify-center gap-4 md:gap-6">
         <a
           href="#experience"
-          class="px-6 py-3 bg-sky-600 text-white rounded-full shadow-lg hover:bg-sky-500 transition-all duration-300"
+          class="relative z-0 inline-block px-6 py-3 bg-gradient-to-br from-sky-500 via-sky-600 to-sky-800 text-white rounded-full shadow-lg overflow-hidden transition-all duration-300 
+               before:absolute before:inset-0 before:-z-10 before:content-[''] before:bg-gradient-to-br before:from-sky-600 before:via-sky-800 before:to-sky-500 before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100"
         >
           See My Work
         </a>
         <a
           href="#contact"
-          class="px-6 py-3 bg-gray-700 text-white rounded-full shadow-lg hover:bg-gray-600 transition-all duration-300"
+          class="relative z-0 inline-block px-6 py-3 bg-gradient-to-br from-gray-700 via-gray-800 to-gray-700 text-white rounded-full shadow-lg overflow-hidden transition-all duration-300 
+               before:absolute before:inset-0 before:-z-10 before:content-[''] before:bg-gradient-to-br before:from-gray-800 before:via-gray-700 before:to-gray-800 before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100"
         >
           Contact Me
         </a>
