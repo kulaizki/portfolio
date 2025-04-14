@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ExperienceCard from '$lib/components/experience-card.svelte';
-	import { experiences } from '$lib/constants'; // Import data
+	import { experiences } from '$lib/constants';
 	export let className: string = '';
 	import { cubicOut } from 'svelte/easing';
 	import { inview } from 'svelte-inview';

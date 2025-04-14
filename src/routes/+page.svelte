@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Hero from './hero.svelte';
   import Experience from './experience.svelte';
   import Skills from './skills.svelte';
@@ -6,9 +6,20 @@
   import Footer from './footer.svelte';
   import Contact from './contact.svelte';
   import ScrollToTop from '$lib/components/scroll-to-top.svelte';
+  import CustomCursor from '$lib/components/custom-cursor.svelte';
+
+  let showCursorTrail = false;
+
+  function showCursor() {
+    showCursorTrail = true;
+  }
+
+  function hideCursor() {
+    showCursorTrail = false;
+  }
 </script>
 
-<Hero />
+<Hero onEnter={showCursor} onLeave={hideCursor} />
 
 <div class="bg-gradient-to-br from-gray-950 via-gray-900 to-black">
   <Skills className="border-y border-gray-700 pb-16" />
@@ -20,3 +31,5 @@
 <Footer />
 
 <ScrollToTop />
+
+<CustomCursor active={showCursorTrail} />

@@ -2,6 +2,9 @@
   import { cubicOut } from 'svelte/easing';
   import { onMount } from 'svelte';
   
+  export let onEnter: () => void;
+  export let onLeave: () => void;
+
   let show: boolean = false;
   
   function blurFly(node: HTMLElement, params: { 
@@ -32,7 +35,12 @@
   });
 </script>
 
-<section class="bg-gradient-to-br from-black via-sky-950 to-black text-white min-h-screen flex items-center justify-center">
+<section 
+  class="bg-gradient-to-br from-black via-sky-950 to-black text-white min-h-screen flex items-center justify-center"
+  on:mouseenter={onEnter}
+  on:mouseleave={onLeave}
+  aria-label="Hero Section"
+>
   {#if show}
     <div
       class="max-w-4xl px-6 text-center"
