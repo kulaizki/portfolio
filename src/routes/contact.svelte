@@ -51,7 +51,7 @@
       </p>
       <a
         href="mailto:fitzsixto.work@gmail.com"
-        class="px-6 py-3 bg-sky-600 text-white rounded-full shadow-lg hover:bg-sky-600 transition-all duration-300"
+        class="px-6 py-3 bg-gradient-to-br from-sky-500 via-sky-600 to-sky-800 text-white rounded-full shadow-lg hover:bg-sky-400 transition-all duration-300"
       >
         Get in Touch
       </a>
