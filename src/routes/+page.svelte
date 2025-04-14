@@ -17,6 +17,8 @@
   function hideCursor() {
     showCursorTrail = false;
   }
+
+  const githubUsername = 'kulaizki';
 </script>
 
 <Hero onEnter={showCursor} onLeave={hideCursor} />

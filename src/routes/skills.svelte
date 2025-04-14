@@ -33,8 +33,8 @@
 
 <section 
   id="skills" 
-  class="py-20 text-white {className}"
-	use:inview={{ threshold: 0.3 }}
+  class="py-20 text-white overflow-hidden {className}"
+	use:inview={{ threshold: 0.1 }}
 	on:inview_change={(event) => {
     if (!hasAnimated) {
       isInView = event.detail.inView;
@@ -44,16 +44,56 @@
 >
   {#if isInView}
     <div 
-      class="mx-auto max-w-6xl px-6" 
+      class="mx-auto max-w-6xl px-6"
       transition:blurFly
     >
       <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 bg-gradient-to-r from-sky-300 to-sky-500 bg-clip-text text-transparent pb-1">Skills</h2>
-      <p class="text-center text-lg text-gray-400 mb-16">A collection of technologies and tools I work with.</p>
-      <div class="flex flex-wrap justify-center gap-4">
-        {#each skills as skill}
-          <SkillItem {skill} />
-        {/each}
+      <p class="text-center text-lg text-gray-400 mb-12">Technologies and tools I frequently use.</p> 
+    </div>
+    
+    <div class="relative flex" aria-label="Scrolling skill icons">
+      <div class="marquee">
+        <div class="marquee-content scroll-left py-2">
+          {#each skills as skill (skill.name)}
+            <SkillItem {skill} />
+          {/each}
+          {#each skills as skill (skill.name + '-clone')}
+            <SkillItem {skill} />
+          {/each}
+        </div>
       </div>
     </div>
   {/if}
 </section>
+
+<style>
+  .marquee {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
+ }
+
+  .marquee-content {
+    display: flex;
+    width: max-content; /* Fit all items */
+    flex-shrink: 0;
+    align-items: center;
+    will-change: transform; /* Performance hint */
+  }
+
+  .scroll-left {
+    animation: scroll-left 40s linear infinite;
+  }
+
+  @keyframes scroll-left {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); } /* Scroll by half the duplicated width */
+  }
+
+  /* Optional: Pause on hover */
+  .marquee:hover .marquee-content {
+    animation-play-state: paused;
+  }
+</style>
