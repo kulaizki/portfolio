@@ -1,3 +1,3 @@
 # Fitzsixto
 
-![Preview](/images/portfolio-preview.webp)
+![Preview](/static/images/portfolio-preview.webp)
