@@ -13,7 +13,7 @@ export const projects: Project[] = [
     description:
       'Pokedex app with a gacha simulator that features Pokémon stats using PokeAPI.',
     url: 'https://pokelight-labs.vercel.app/',
-    imageUrl: '/projects/pokelight-min.webp'
+    imageUrl: '/projects/pokelight-yellow-min.webp'
   },
   {
     name: 'nexleague',
