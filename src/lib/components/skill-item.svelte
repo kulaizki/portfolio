@@ -12,5 +12,5 @@
          transition-transform duration-200 ease-in-out hover:scale-110 hover:shadow-lg hover:border-sky-600/50 mx-2 flex-shrink-0"
   title={skill.name}
 >
-  <img src={skill.icon} alt={skill.name} class="h-16 w-16 object-contain" />
+  <img src={skill.icon} alt={skill.name} class="h-8 w-8 sm:h-16 sm:w-16 object-contain" />
 </a>
