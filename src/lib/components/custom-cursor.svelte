@@ -12,7 +12,6 @@
   let animationFrameId: number;
 
   function handleMouseMove(event: MouseEvent) {
-    // Always track mouse position if the component is mounted and pointer is fine
     const now = performance.now();
     trail = [{ x: event.clientX, y: event.clientY, timestamp: now }, ...trail];
 
@@ -43,7 +42,7 @@
 
 </script>
 
-{#if active && trail.length > 0} <!-- Render based on the 'active' prop -->
+{#if active && trail.length > 0} 
   {#each trail as point, i (point.timestamp)} 
     {@const age = (performance.now() - point.timestamp) / TRAIL_DURATION}
     {@const opacity = (1 - age) * 0.8} 

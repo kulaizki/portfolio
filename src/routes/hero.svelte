@@ -1,12 +1,12 @@
 <script lang="ts">
   import { cubicOut } from 'svelte/easing';
   import { onMount } from 'svelte';
-  
+
   export let onEnter: () => void;
   export let onLeave: () => void;
 
   let show: boolean = false;
-  
+
   function blurFly(node: HTMLElement, params: { 
     delay?: number, 
     duration?: number, 

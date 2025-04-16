@@ -7,28 +7,8 @@
 	let isInView = false;
   let hasAnimated = false;
 
-  function blurFly(node: HTMLElement, params: { 
-    delay?: number, 
-    duration?: number, 
-    easing?: (t: number) => number 
-  } = {}): { 
-    delay: number, 
-    duration: number, 
-    easing: (t: number) => number, 
-    css: (t: number) => string 
-  } {
-    const existingTransform = getComputedStyle(node).transform.replace('none', '');
-    return {
-      delay: params.delay || 0,
-      duration: params.duration || 1000,
-      easing: params.easing || cubicOut,
-      css: (t: number) => `
-        transform: ${existingTransform} translateY(${(1 - t) * 100}px);
-        opacity: ${t};
-        filter: blur(${(1 - t) * 10}px);
-      `
-    };
-  }
+  const skillsRow1 = skills.slice(0, Math.ceil(skills.length / 2));
+  const skillsRow2 = skills.slice(Math.ceil(skills.length / 2));
 </script>
 
 <section 
@@ -48,19 +28,27 @@
   </div>
   
   <div 
-    class="relative flex transition-opacity duration-1000 {isInView ? 'opacity-100' : 'opacity-0'}"
+    class="relative flex flex-col gap-4 transition-opacity duration-1000 {isInView ? 'opacity-100' : 'opacity-0'}"
     aria-label="Scrolling skill icons"
   >
-    <div class="marquee">
+    <div class="py-2 marquee">
       <div class="marquee-content scroll-left">
-        {#each skills as skill (skill.name)}
-          <SkillItem {skill} />
-        {/each}
-        {#each skills as skill (skill.name + '-clone')}
-          <SkillItem {skill} />
-        {/each}
+        {#each skillsRow1 as skill (skill.name)} <SkillItem {skill} /> {/each}
+        {#each skillsRow1 as skill (skill.name + '-clone1')} <SkillItem {skill} /> {/each}
+        {#each skillsRow1 as skill (skill.name + '-clone2')} <SkillItem {skill} /> {/each}
+        {#each skillsRow1 as skill (skill.name + '-clone3')} <SkillItem {skill} /> {/each}
       </div>
     </div>
+
+    <div class="py-2 marquee">
+      <div class="marquee-content scroll-right">
+        {#each skillsRow2 as skill (skill.name)} <SkillItem {skill} /> {/each}
+        {#each skillsRow2 as skill (skill.name + '-clone1b')} <SkillItem {skill} /> {/each}
+        {#each skillsRow2 as skill (skill.name + '-clone2b')} <SkillItem {skill} /> {/each}
+        {#each skillsRow2 as skill (skill.name + '-clone3b')} <SkillItem {skill} /> {/each}
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -85,9 +73,18 @@
     animation: scroll-left 40s linear infinite;
   }
 
+  .scroll-right {
+    animation: scroll-right 40s linear infinite;
+  }
+
   @keyframes scroll-left {
     0% { transform: translateX(0%); }
-    100% { transform: translateX(-50%); } 
+    100% { transform: translateX(-25%); }
+  }
+
+  @keyframes scroll-right {
+    0% { transform: translateX(-25%); }
+    100% { transform: translateX(0%); }
   }
 
   .marquee:hover .marquee-content {
