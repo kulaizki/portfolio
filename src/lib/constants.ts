@@ -9,18 +9,18 @@ export const projects: Project[] = [
     imageUrl: '/projects/z1-min.webp'
   },
   {
-    name: 'nexleague',
-    description:
-      'An app that provides AI-driven insights and tailored performance analysis to enhance your League of Legends gameplay.',
-    url: 'https://nexleague.vercel.app/',
-    imageUrl: '/projects/nexleague-min.webp'
-  },
-  {
     name: 'Pokélight',
     description:
       'Pokedex app with a gacha simulator that features Pokémon stats using PokeAPI.',
     url: 'https://pokelight-labs.vercel.app/',
     imageUrl: '/projects/pokelight-min.webp'
+  },
+  {
+    name: 'nexleague',
+    description:
+      'An app that provides AI-driven insights and tailored performance analysis to enhance your League of Legends gameplay.',
+    url: 'https://nexleague.vercel.app/',
+    imageUrl: '/projects/nexleague-min.webp'
   },
   {
     name: 'echo',
