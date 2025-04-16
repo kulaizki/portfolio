@@ -45,9 +45,9 @@
           href="https://github.com/kulaizki"
           target="_blank"
           rel="noopener noreferrer"
-          class="font-bold text-sky-500 hover:underline hover:text-sky-300 transition ease-in-out duration-200"
+          class="[text-shadow:0_0_8px_rgba(0,242,255,0.6)] bg-gradient-to-r from-sky-300 to-sky-600 bg-clip-text text-transparent font-bold transition ease-in-out duration-200"
         >
-          kulaizki
+          Fitzsixto 
         </a>. All rights reserved.
       </p>
       <div class="flex space-x-4 pt-3 md:pt-0">
