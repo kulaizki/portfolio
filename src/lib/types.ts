@@ -4,6 +4,7 @@ export interface Project {
   url: string;
   imageUrl?: string;
   technologies?: string[];
+  repoUrl?: string;
 }
 
 export interface Experience {

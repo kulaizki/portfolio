@@ -7,7 +7,8 @@ export const projects: Project[] = [
       'An app that provides personalized AI-powered gameplay analytics and strategic guidance for mastering Dota 2.',
     url: 'https://z1-dota.vercel.app/',
     imageUrl: '/projects/z1-min.webp',
-    technologies: ['SvelteKit', 'TypeScript', 'OpenDota API','Tailwind', 'Vercel']
+    technologies: ['SvelteKit', 'TypeScript', 'OpenDota API','Tailwind', 'Vercel'],
+    repoUrl: 'https://github.com/kulaizki/z1'
   },
   {
     name: 'Pokélight',
@@ -15,7 +16,8 @@ export const projects: Project[] = [
       'Pokedex app with a gacha simulator that features Pokémon stats using PokeAPI.',
     url: 'https://pokelight-labs.vercel.app/',
     imageUrl: '/projects/pokelight-yellow-min.webp',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind', 'PokeAPI', 'Vercel']
+    technologies: ['Next.js', 'TypeScript', 'Tailwind', 'PokeAPI', 'Vercel'],
+    repoUrl: 'https://github.com/kulaizki/pokelight'
   },
   {
     name: 'nexleague',
@@ -23,7 +25,8 @@ export const projects: Project[] = [
       'An app that provides AI-driven insights and tailored performance analysis to enhance your League of Legends gameplay.',
     url: 'https://nexleague.vercel.app/',
     imageUrl: '/projects/nexleague-min.webp',
-    technologies: ['SvelteKit', 'TypeScript', 'Gemini API', 'Riot API', 'Tailwind', 'Vercel']
+    technologies: ['SvelteKit', 'TypeScript', 'Gemini API', 'Riot API', 'Tailwind', 'Vercel'],
+    repoUrl: 'https://github.com/kulaizki/nexleague'
   },
   {
     name: 'echo',
@@ -31,7 +34,8 @@ export const projects: Project[] = [
       'An AI-powered web app designed to be a space for users to explore their emotions through guided conversation.',
     url: 'https://echobuddy.vercel.app',
     imageUrl: '/projects/echo-min.png',
-    technologies: ['SvelteKit', 'Typescript', 'Gemini API', 'Tailwind', 'Vercel']
+    technologies: ['SvelteKit', 'Typescript', 'Gemini API', 'Tailwind', 'Vercel'],
+    repoUrl: 'https://github.com/kulaizki/echo'
   },
   {
     name: 'Neurotypical vs. ASD',
@@ -39,7 +43,8 @@ export const projects: Project[] = [
       'An app that visualizes Neurotypical vs. Autism Brain Disorder Brain Connectivity using the Harvard-Oxford atlases.',
     url: 'https://neurotypical-vs-asd.streamlit.app/',
     imageUrl: '/projects/neuro-vs-asd-min.webp',
-    technologies: ['Python', 'Streamlit', 'Nilearn', 'Pandas']
+    technologies: ['Python', 'Streamlit', 'Nilearn', 'Pandas'],
+    repoUrl: 'https://github.com/kulaizki/neurotypical-vs-asd'
   },
 ];
 
