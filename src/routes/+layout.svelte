@@ -17,8 +17,6 @@
 
 <style global>
 	@media (pointer: fine) {
-		html {
-			cursor: none;
-		}
+		
 	}
 </style>

@@ -5,7 +5,7 @@
 
   type Point = { x: number; y: number; timestamp: number };
   const TRAIL_LENGTH = 100; 
-  const TRAIL_DURATION = 300; 
+  const TRAIL_DURATION = 600; 
 
   const skyColors = {
     300: '#7dd3fc',
