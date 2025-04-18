@@ -45,7 +45,7 @@
           href="https://github.com/kulaizki"
           target="_blank"
           rel="noopener noreferrer"
-          class="[text-shadow:0_0_8px_rgba(0,242,255,0.6)] bg-gradient-to-r from-sky-300 to-sky-600 bg-clip-text text-transparent font-bold transition ease-in-out duration-200"
+          class="[text-shadow:0_0_8px_rgba(0,242,255,0.6)] bg-gradient-to-r from-sky-300 to-sky-600 bg-clip-text text-transparent font-bold transition ease-in-out duration-200 hover:from-sky-400 hover:to-sky-700"
         >
           Fitzsixto 
         </a>. All rights reserved.
