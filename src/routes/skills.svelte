@@ -23,8 +23,8 @@
   }}
 >
   <div class="mx-auto max-w-6xl px-6">
-    <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 bg-gradient-to-r from-sky-300 to-sky-500 bg-clip-text text-transparent pb-1">Skills</h2>
-    <p class="text-center text-lg text-gray-400 mb-12">Technologies and tools I frequently use.</p> 
+    <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-sky-300 to-sky-500 bg-clip-text text-transparent pb-1">Skills</h2>
+    <p class="text-lg text-gray-400 mb-12">Technologies and tools I frequently use.</p> 
   </div>
   
   <div 

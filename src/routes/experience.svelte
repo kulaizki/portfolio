@@ -18,13 +18,24 @@
 		}
 	}}
 >
-	<div class="mx-auto max-w-6xl px-6">
-		<h2 class="mb-4 text-center text-3xl font-bold md:text-4xl bg-gradient-to-r from-sky-300 to-sky-500 bg-clip-text text-transparent pb-1">Experience</h2>
-		<p class="text-center text-lg text-gray-400 mb-16">My professional journey and key contributions.</p>
-		<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 transition-opacity duration-1000 {isInView ? 'opacity-100' : 'opacity-0'}">
-			{#each experiences as experience}
-				<ExperienceCard {experience} />
-			{/each}
+	<div class="mx-auto max-w-6xl px-6 grid grid-cols-1 md:grid-cols-3 gap-16"> 
+		<div class="md:col-span-1">
+			<h2 class="text-3xl font-bold md:text-4xl bg-gradient-to-r from-sky-300 to-sky-500 bg-clip-text text-transparent pb-1 mb-4">
+				Experience
+			</h2>
+			<p class="text-lg text-gray-400">
+				My professional journey and key contributions.
+			</p>
+		</div>
+
+		<div 
+			class="md:col-span-2 relative border-s border-gray-700 transition-opacity duration-1000 {isInView ? 'opacity-100' : 'opacity-0'}"
+		>
+			<ol class="ms-0"> 
+				{#each experiences as experience (experience.company + experience.title)}
+					<ExperienceCard {experience} /> 
+				{/each}
+			</ol>
 		</div>
 	</div>
 </section>
