@@ -33,7 +33,7 @@ export const projects: Project[] = [
     description:
       'An AI-powered web app designed to be a space for users to explore their emotions through guided conversation.',
     url: 'https://echobuddy.vercel.app',
-    imageUrl: '/projects/echo-min.png',
+    imageUrl: '/projects/echo-chat.webp',
     technologies: ['SvelteKit', 'Typescript', 'Gemini API', 'Tailwind', 'Vercel'],
     repoUrl: 'https://github.com/kulaizki/echo'
   },
