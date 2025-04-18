@@ -35,17 +35,14 @@
 			{/each}
 		</div>
 		
-		<!-- Technologies/Skills (Uncomment after adding 'technologies' to type and data) -->
-		<!-- 
-		<div class="flex flex-wrap gap-2 mt-4">
-			{#if experience.technologies}
+		{#if experience.technologies && experience.technologies.length > 0}
+			<div class="flex flex-wrap gap-2 mt-4">
 				{#each experience.technologies as tech}
-					<span class="inline-block rounded-full bg-sky-900/50 px-3 py-1 text-xs font-medium text-sky-300">
+					<span class="inline-flex items-center rounded-full bg-sky-900/50 px-3 py-1 text-xs font-medium leading-5 text-sky-300">
 						{tech}
 					</span>
 				{/each}
-			{/if}
-		</div>
-		-->
+			</div>
+		{/if}
 	</svelte:element>
 </li>
