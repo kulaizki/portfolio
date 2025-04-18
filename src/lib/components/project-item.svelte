@@ -5,7 +5,7 @@
 </script>
 
 <div
-	class="flex h-full flex-col overflow-hidden rounded-lg border border-sky-900/50 bg-gradient-to-br from-gray-800 via-slate-900 to-gray-800 shadow-lg transition-all duration-300 hover:scale-105 hover:border-sky-400"
+	class="hover:cursor-pointer flex h-full flex-col overflow-hidden rounded-lg border border-sky-900/50 bg-gradient-to-br from-gray-800 via-slate-900 to-gray-800 shadow-lg transition-all duration-300 hover:scale-105 hover:border-sky-400"
 >
 	{#if project.imageUrl}
 		<img
