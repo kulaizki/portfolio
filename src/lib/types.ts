@@ -3,6 +3,7 @@ export interface Project {
   description: string;
   url: string;
   imageUrl?: string;
+  technologies?: string[];
 }
 
 export interface Experience {
@@ -12,6 +13,7 @@ export interface Experience {
   responsibilities: string[];
   link: string;
   imageUrl: string;
+  technologies?: string[];
 }
 
 export interface Skill {

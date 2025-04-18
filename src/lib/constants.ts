@@ -6,35 +6,40 @@ export const projects: Project[] = [
     description:
       'An app that provides personalized AI-powered gameplay analytics and strategic guidance for mastering Dota 2.',
     url: 'https://z1-dota.vercel.app/',
-    imageUrl: '/projects/z1-min.webp'
+    imageUrl: '/projects/z1-min.webp',
+    technologies: ['SvelteKit', 'TypeScript', 'OpenDota API','Tailwind', 'Vercel']
   },
   {
     name: 'Pokélight',
     description:
       'Pokedex app with a gacha simulator that features Pokémon stats using PokeAPI.',
     url: 'https://pokelight-labs.vercel.app/',
-    imageUrl: '/projects/pokelight-yellow-min.webp'
+    imageUrl: '/projects/pokelight-yellow-min.webp',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind', 'PokeAPI', 'Vercel']
   },
   {
     name: 'nexleague',
     description:
       'An app that provides AI-driven insights and tailored performance analysis to enhance your League of Legends gameplay.',
     url: 'https://nexleague.vercel.app/',
-    imageUrl: '/projects/nexleague-min.webp'
+    imageUrl: '/projects/nexleague-min.webp',
+    technologies: ['SvelteKit', 'TypeScript', 'Gemini API', 'Riot API', 'Tailwind', 'Vercel']
   },
   {
     name: 'echo',
     description:
       'An AI-powered web app designed to be a space for users to explore their emotions through guided conversation.',
     url: 'https://echobuddy.vercel.app',
-    imageUrl: '/projects/echo-min.png'
+    imageUrl: '/projects/echo-min.png',
+    technologies: ['SvelteKit', 'Typescript', 'Gemini API', 'Tailwind', 'Vercel']
   },
   {
     name: 'Neurotypical vs. ASD',
     description:
       'An app that visualizes Neurotypical vs. Autism Brain Disorder Brain Connectivity using the Harvard-Oxford atlases.',
     url: 'https://neurotypical-vs-asd.streamlit.app/',
-    imageUrl: '/projects/neuro-vs-asd-min.webp'
+    imageUrl: '/projects/neuro-vs-asd-min.webp',
+    technologies: ['Python', 'Streamlit', 'Nilearn', 'Pandas']
   },
 ];
 
@@ -48,7 +53,8 @@ export const experiences: Experience[] = [
       'Managed full-stack development and hosting.'
     ],
     link: 'https://farmtri.com',
-    imageUrl: '/experiences/farmtri-banner.png'
+    imageUrl: '/experiences/farmtri-banner.png',
+    technologies: ['SvelteKit', 'TypeScript', 'Tailwind', 'Supabase', 'Vercel']
   },
   {
     title: 'Mobile Developer',
@@ -59,7 +65,8 @@ export const experiences: Experience[] = [
       'Implemented core features for the company mobile application.'
     ],
     link: 'https://www.fitsenpai.com/',
-    imageUrl: '/experiences/fitsenpai-banner.png'
+    imageUrl: '/experiences/fitsenpai-banner.png',
+    technologies: ['React Native', 'TypeScript', 'Firebase', 'Expo']
   },
   {
     title: 'Software Developer Intern',
@@ -70,7 +77,8 @@ export const experiences: Experience[] = [
       'Contributed to full-stack dev, testing, and workflow optimization.'
     ],
     link: 'https://www.symph.co/',
-    imageUrl: '/experiences/symph-banner.png'
+    imageUrl: '/experiences/symph-banner.png',
+    technologies: ['Next.js', 'React', 'TypeScript', 'Git', 'Docker']
   },
   {
     title: 'UI/UX Designer',
@@ -81,7 +89,8 @@ export const experiences: Experience[] = [
       'Secured designs and presentations loved by company stakeholders.'
     ],
     link: 'https://rethinkable.xyz/',
-    imageUrl: '/experiences/rethinkable-banner.jpg'
+    imageUrl: '/experiences/rethinkable-banner.jpg',
+    technologies: ['Figma', 'Prototyping', 'User Research']
   },
   {
     title: 'Lead',
@@ -101,8 +110,8 @@ function getSkillCategory(skillName: string): Skill['category'] {
   if (['svelte', 'next.js', 'react', 'tailwind'].includes(lowerCaseName)) return 'Frameworks';
   if (['typescript', 'javascript', 'python', 'sql'].includes(lowerCaseName)) return 'Languages';
   if (['supabase', 'firebase', 'mysql'].includes(lowerCaseName)) return 'Databases';
-  if (['git', 'vercel', 'linux', 'aws', 'tensorflow', 'figma', 'n8n', 'docker', 'cloudflare', 'gcp'].includes(lowerCaseName)) return 'Tools';
-  return 'Tools'; 
+  if (['git', 'vercel', 'linux', 'aws', 'tensorflow', 'figma', 'n8n', 'docker', 'cloudflare', 'gcp', 'gemini'].includes(lowerCaseName)) return 'Tools';
+  return 'Tools';
 }
 
 const rawSkills = [
@@ -111,7 +120,7 @@ const rawSkills = [
   { skillName: 'React', skillUrl: 'https://reactjs.org/', skillIcon: 'https://skillicons.dev/icons?i=react' },
   { skillName: 'Tailwind', skillUrl: 'https://tailwindcss.com/', skillIcon: 'https://skillicons.dev/icons?i=tailwind' },
   { skillName: 'Typescript', skillUrl: 'https://www.typescriptlang.org/', skillIcon: 'https://skillicons.dev/icons?i=typescript' },
-  { skillName: 'Javascript', skillUrl: 'https://www.javascript.com/', skillIcon: 'https://skillicons.dev/icons?i=javascript' }, 
+  { skillName: 'Javascript', skillUrl: 'https://www.javascript.com/', skillIcon: 'https://skillicons.dev/icons?i=javascript' },
   { skillName: 'Supabase', skillUrl: 'https://supabase.io/', skillIcon: 'https://skillicons.dev/icons?i=supabase' },
   { skillName: 'Firebase', skillUrl: 'https://firebase.google.com/', skillIcon: 'https://skillicons.dev/icons?i=firebase' },
   { skillName: 'Git', skillUrl: 'https://git-scm.com/', skillIcon: 'https://skillicons.dev/icons?i=git' },
@@ -129,7 +138,7 @@ const rawSkills = [
 
 export const skills: Skill[] = rawSkills.map(skill => ({
   name: skill.skillName,
-  icon: skill.skillIcon, 
+  icon: skill.skillIcon,
   url: skill.skillUrl,
   category: getSkillCategory(skill.skillName)
 })); 
