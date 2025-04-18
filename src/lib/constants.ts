@@ -43,7 +43,7 @@ export const projects: Project[] = [
       'An app that visualizes Neurotypical vs. Autism Brain Disorder Brain Connectivity using the Harvard-Oxford atlases.',
     url: 'https://neurotypical-vs-asd.streamlit.app/',
     imageUrl: '/projects/neuro-vs-asd-min.webp',
-    technologies: ['Python', 'Streamlit', 'Nilearn', 'Pandas'],
+    technologies: ['Python', 'Streamlit', 'Nilearn', 'NetworkX', 'SciPy', 'Matplotlib', 'Pandas'],
     repoUrl: 'https://github.com/kulaizki/neurotypical-vs-asd'
   },
 ];
@@ -59,7 +59,7 @@ export const experiences: Experience[] = [
     ],
     link: 'https://farmtri.com',
     imageUrl: '/experiences/farmtri-banner.png',
-    technologies: ['SvelteKit', 'TypeScript', 'Tailwind', 'Supabase', 'Vercel']
+    technologies: ['Next.js', 'TypeScript', 'Tailwind', 'Supabase', 'Vercel']
   },
   {
     title: 'Mobile Developer',
@@ -71,7 +71,7 @@ export const experiences: Experience[] = [
     ],
     link: 'https://www.fitsenpai.com/',
     imageUrl: '/experiences/fitsenpai-banner.png',
-    technologies: ['React Native', 'TypeScript', 'Firebase', 'Expo']
+    technologies: ['React Native', 'TypeScript', 'Expo', 'Supabase', 'OpenAI API', 'LemonSqueezy']
   },
   {
     title: 'Software Developer Intern',
@@ -83,7 +83,7 @@ export const experiences: Experience[] = [
     ],
     link: 'https://www.symph.co/',
     imageUrl: '/experiences/symph-banner.png',
-    technologies: ['Next.js', 'React', 'TypeScript', 'Git', 'Docker']
+    technologies: ['Next.js', 'React', 'TypeScript', 'Git', 'Docker', 'NestJS', 'Jest', 'AirOps']
   },
   {
     title: 'UI/UX Designer',
@@ -95,7 +95,7 @@ export const experiences: Experience[] = [
     ],
     link: 'https://rethinkable.xyz/',
     imageUrl: '/experiences/rethinkable-banner.jpg',
-    technologies: ['Figma', 'Prototyping', 'User Research']
+    technologies: ['Figma', 'Canva', 'Prototyping', 'User Research']
   },
   {
     title: 'Lead',
@@ -106,7 +106,8 @@ export const experiences: Experience[] = [
       'Secured partnerships and sponsorships, including Datacamp.'
     ],
     link: 'https://gdg.community.dev/gdg-on-campus-university-of-san-carlos-cebu-philippines/',
-    imageUrl: '/experiences/gdgoc-pfp.png'
+    imageUrl: '/experiences/gdgoc-pfp.png',
+    technologies: ['Gemini', 'Firebase', 'Flutter', 'Bevy']
   }
 ];
 
