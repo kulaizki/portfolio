@@ -2,13 +2,13 @@ import type { Project, Experience, Skill } from './types';
 
 export const projects: Project[] = [
   {
-    name: 'z1',
-    description:
-      'An app that provides personalized AI-powered gameplay analytics and strategic guidance for mastering Dota 2.',
-    url: 'https://z1-dota.vercel.app/',
-    imageUrl: '/projects/z1-min.webp',
-    technologies: ['SvelteKit', 'TypeScript', 'OpenDota API','Tailwind', 'Vercel'],
-    repoUrl: 'https://github.com/kulaizki/z1'
+    name: 'Planpokr',
+    description: 
+      'A modern, real-time planning poker application for agile teams to estimate user stories efficiently and collaboratively.',
+    url: 'https://planpokr.vercel.app/',
+    imageUrl: '/projects/planpokr-min.webp',
+    technologies: ['Websockets', 'Supabase', 'Typescript', 'Sveltekit', 'Tailwind', 'Vercel'],
+    repoUrl: 'https://github.com/kulaizki/planpokr/'
   },
   {
     name: 'Pokélight',
@@ -20,7 +20,7 @@ export const projects: Project[] = [
     repoUrl: 'https://github.com/kulaizki/pokelight'
   },
   {
-    name: 'nexleague',
+    name: 'Nexleague',
     description:
       'An app that provides AI-driven insights and tailored performance analysis to enhance your League of Legends gameplay.',
     url: 'https://nexleague.vercel.app/',
@@ -29,7 +29,16 @@ export const projects: Project[] = [
     repoUrl: 'https://github.com/kulaizki/nexleague'
   },
   {
-    name: 'echo',
+    name: 'z1',
+    description:
+      'An app that provides personalized AI-powered gameplay analytics and strategic guidance for mastering Dota 2.',
+    url: 'https://z1-dota.vercel.app/',
+    imageUrl: '/projects/z1-min.webp',
+    technologies: ['SvelteKit', 'TypeScript', 'OpenDota API','Tailwind', 'Vercel'],
+    repoUrl: 'https://github.com/kulaizki/z1'
+  },
+  {
+    name: 'Echo',
     description:
       'An AI-powered web app designed to be a space for users to explore their emotions through guided conversation.',
     url: 'https://echobuddy.vercel.app',
