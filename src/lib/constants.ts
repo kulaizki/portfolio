@@ -61,7 +61,7 @@ export const experiences: Experience[] = [
   {
     title: 'Senior Software Engineer',
     company: 'Farmtri',
-    date: 'Aug 2024 - Mar 2025',
+    date: 'Aug 2024 - Apr 2025',
     responsibilities: [
       'Architectured, developed, and optimized the company website.',
       'Managed full-stack development and hosting.'
