@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio website showcasing my skills, projects, and professional experience.
 
-![Portfolio Preview](https://github.com/user-attachments/assets/fef7233a-d803-4018-b151-6d654b8e9329)
+https://github.com/user-attachments/assets/ec65e9d1-6099-4542-8d7a-19343220714b
 
 ## 🚀 Features
 
