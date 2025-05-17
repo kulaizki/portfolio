@@ -59,7 +59,7 @@ export const projects: Project[] = [
 
 export const experiences: Experience[] = [
   {
-    title: 'Senior Software Engineer',
+    title: 'Lead Software Engineer',
     company: 'Farmtri',
     date: 'Aug 2024 - Apr 2025',
     responsibilities: [
