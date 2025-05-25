@@ -46,10 +46,10 @@
       class="max-w-4xl px-6 text-center"
       transition:blurFly
     >
-      <h1 class="[text-shadow:0_0_8px_rgba(0,242,255,0.4)] text-5xl md:text-8xl font-bold tracking-tight mb-4 bg-gradient-to-r from-sky-300 to-sky-600 bg-clip-text text-transparent">
+      <h1 class="[text-shadow:0_0_8px_rgba(0,242,255,0.4)] text-5xl md:text-8xl font-bold tracking-tight mb-4 bg-gradient-to-r from-sky-300 to-sky-600 bg-clip-text text-transparent select-none">
         Fitzsixto
       </h1>
-      <p class="text-lg md:text-xl text-gray-400 mb-8">
+      <p class="text-lg md:text-xl text-gray-400 mb-8 select-none">
         A developer with a passion for problem-solving and neuroscience.
       </p>
       <div class="flex flex-wrap justify-center items-center gap-4 md:gap-6">
