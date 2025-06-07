@@ -1,58 +1,52 @@
 <script lang="ts">
-  import { cubicOut } from 'svelte/easing';
   import { onMount } from 'svelte';
 
   export let onEnter: () => void;
   export let onLeave: () => void;
 
-  let show: boolean = false;
-
-  function blurFly(node: HTMLElement, params: { 
-    delay?: number, 
-    duration?: number, 
-    easing?: (t: number) => number 
-  } = {}): { 
-    delay: number, 
-    duration: number, 
-    easing: (t: number) => number, 
-    css: (t: number) => string 
-  } {
-    const existingTransform = getComputedStyle(node).transform.replace('none', '');
-    return {
-      delay: params.delay || 0,
-      duration: params.duration || 1000,
-      easing: params.easing || cubicOut,
-      css: (t: number) => `
-        transform: ${existingTransform} translateY(${(1 - t) * 100}px);
-        opacity: ${t};
-        filter: blur(${(1 - t) * 10}px);
-      `
-    };
-  }
+  let isInView = false;
+  let applyDelay = true;
 
   onMount(() => {
-    show = true;
+    // Start the animation shortly after the component mounts
+    setTimeout(() => {
+      isInView = true;
+    }, 100);
+    // Remove the transition delay after the initial animation completes
+    setTimeout(() => {
+      applyDelay = false;
+    }, 1200); // Duration should be enough for all staggered animations
   });
 </script>
 
-<section 
+<section
   class="bg-gradient-to-br from-black via-sky-950 to-black text-white min-h-screen flex items-center justify-center"
   on:mouseenter={onEnter}
   on:mouseleave={onLeave}
   aria-label="Hero Section"
 >
-  {#if show}
-    <div
-      class="max-w-4xl px-6 text-center"
-      transition:blurFly
+  <div class="max-w-4xl px-6 text-center">
+    <h1
+      class="[text-shadow:0_0_8px_rgba(0,242,255,0.4)] text-5xl md:text-8xl font-bold tracking-tight mb-4 bg-gradient-to-r from-sky-300 to-sky-600 bg-clip-text text-transparent select-none transition-all duration-700 ease-out {isInView
+        ? 'opacity-100 translate-y-0'
+        : 'opacity-0 translate-y-10'}"
+      style={applyDelay ? 'transition-delay: 200ms' : 'transition-delay: 0ms'}
     >
-      <h1 class="[text-shadow:0_0_8px_rgba(0,242,255,0.4)] text-5xl md:text-8xl font-bold tracking-tight mb-4 bg-gradient-to-r from-sky-300 to-sky-600 bg-clip-text text-transparent select-none">
-        Fitzsixto
-      </h1>
-      <p class="text-lg md:text-xl text-gray-400 mb-8 select-none">
-        A developer with a passion for problem-solving and neuroscience.
-      </p>
-      <div class="flex flex-wrap justify-center items-center gap-4 md:gap-6">
+      Fitzsixto
+    </h1>
+    <p
+      class="text-lg md:text-xl text-gray-400 mb-8 select-none transition-all duration-700 ease-out {isInView
+        ? 'opacity-100 translate-y-0'
+        : 'opacity-0 translate-y-10'}"
+      style={applyDelay ? 'transition-delay: 350ms' : 'transition-delay: 0ms'}
+    >
+      A developer with a passion for problem-solving and neuroscience.
+    </p>
+    <div class="flex flex-wrap justify-center items-center gap-4 md:gap-6">
+      <div
+        class="transition-all duration-500 ease-out {isInView ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}"
+        style={applyDelay ? 'transition-delay: 500ms' : 'transition-delay: 0ms'}
+      >
         <a
           href="#experience"
           class="group relative z-0 inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-br from-sky-600 via-sky-700 to-sky-900 text-white rounded-full shadow-md overflow-hidden transition-all duration-300 border border-sky-700 hover:border-sky-400 hover:shadow-sky-500/30 hover:shadow-lg"
@@ -62,8 +56,13 @@
             <path fill-rule="evenodd" d="M10 15a1 1 0 01-.707-.293l-4-4a1 1 0 111.414-1.414L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4A1 1 0 0110 15z" clip-rule="evenodd" />
             <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v8a1 1 0 11-2 0V6a1 1 0 011-1z" clip-rule="evenodd" />
           </svg>
-          Explore Work 
+          Explore Work
         </a>
+      </div>
+      <div
+        class="transition-all duration-500 ease-out {isInView ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}"
+        style={applyDelay ? 'transition-delay: 650ms' : 'transition-delay: 0ms'}
+      >
         <a
           href="#contact"
           class="group relative z-0 inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-br from-gray-600 via-gray-700 to-gray-900 text-gray-200 rounded-full shadow-md overflow-hidden transition-all duration-300 border border-gray-600 hover:border-gray-400 hover:text-white hover:shadow-gray-500/30 hover:shadow-lg"
@@ -74,6 +73,11 @@
           </svg>
           Say Hello
         </a>
+      </div>
+      <div
+        class="transition-all duration-500 ease-out {isInView ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}"
+        style={applyDelay ? 'transition-delay: 800ms' : 'transition-delay: 0ms'}
+      >
         <a
           href="https://github.com/kulaizki"
           target="_blank"
@@ -86,5 +90,5 @@
         </a>
       </div>
     </div>
-  {/if}
+  </div>
 </section>

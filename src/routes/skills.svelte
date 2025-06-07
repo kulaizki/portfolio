@@ -1,8 +1,7 @@
 <script lang="ts">
   import SkillItem from "$lib/components/skill-item.svelte";
-  import { skills } from "$lib/constants"; 
+  import { skills } from "$lib/constants";
   export let className: string = '';
-  import { cubicOut } from "svelte/easing";
   import { inview } from 'svelte-inview';
 	let isInView = false;
   let hasAnimated = false;
@@ -11,8 +10,8 @@
   const skillsRow2 = skills.slice(Math.ceil(skills.length / 2));
 </script>
 
-<section 
-  id="skills" 
+<section
+  id="skills"
   class="py-20 text-white overflow-hidden {className}"
 	use:inview={{ threshold: 0.1, unobserveOnEnter: true }}
 	on:inview_change={(event) => {
@@ -24,10 +23,10 @@
 >
   <div class="mx-auto max-w-6xl px-6">
     <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-sky-300 to-sky-500 bg-clip-text text-transparent pb-1">Skills</h2>
-    <p class="text-lg text-gray-400 mb-12">Technologies and tools I frequently use.</p> 
+    <p class="text-lg text-gray-400 mb-12">Technologies and tools I frequently use.</p>
   </div>
-  
-  <div 
+
+  <div
     class="relative flex flex-col gap-4 transition-opacity duration-1000 {isInView ? 'opacity-100' : 'opacity-0'}"
     aria-label="Scrolling skill icons"
   >

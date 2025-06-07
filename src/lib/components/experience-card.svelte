@@ -2,9 +2,14 @@
 	import type { Experience } from '$lib/types';
 
 	export let experience: Experience;
+	export let className: string = '';
+	export let style: string = '';
 </script>
 
-<li class="mb-10 ms-6 relative group transition-all duration-300 ease-out hover:bg-slate-800/50 p-4 rounded-md -m-4">
+<li
+	class="mb-10 ms-6 relative group transition-all duration-300 ease-out hover:bg-slate-800/50 p-4 rounded-md -m-4 {className}"
+	{style}
+>
 	<div 
 		class="absolute w-3 h-3 bg-gray-500 rounded-full mt-1.5 -start-[1.85rem] border border-gray-900 
 			   group-hover:bg-sky-400 group-hover:scale-110 transition-all duration-300 ease-out"
