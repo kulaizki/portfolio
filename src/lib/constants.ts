@@ -2,6 +2,14 @@ import type { Project, Experience, Skill } from './types';
 
 export const projects: Project[] = [
   {
+    name: 'Axonia',
+    description: 'An interactive web-based viewer for NIfTI neuroimaging files.',
+    url: 'https://axonia.vercel.app/',
+    imageUrl: '/projects/axonia-min.png',
+    technologies: ['SvelteKit / Svelte', 'NiiVue.js', 'Tailwind CSS', 'TypeScript'],
+    repoUrl: 'https://github.com/kulaizki/axonia'
+  },
+  {
     name: 'Planpokr',
     description: 
       'A modern, real-time planning poker application for agile teams to estimate user stories efficiently and collaboratively.',
@@ -13,7 +21,7 @@ export const projects: Project[] = [
   {
     name: 'Pokélight',
     description:
-      'Pokedex app with a gacha simulator that features Pokémon stats using PokeAPI.',
+      'A Pokédex app with a gacha simulator that features Pokémon stats using PokeAPI.',
     url: 'https://pokelight-labs.vercel.app/',
     imageUrl: '/projects/pokelight-yellow-min.webp',
     technologies: ['Next.js', 'TypeScript', 'Tailwind', 'PokeAPI', 'Vercel'],
@@ -45,15 +53,6 @@ export const projects: Project[] = [
     imageUrl: '/projects/echo-chat.webp',
     technologies: ['SvelteKit', 'Typescript', 'Gemini API', 'Tailwind', 'Vercel'],
     repoUrl: 'https://github.com/kulaizki/echo'
-  },
-  {
-    name: 'Neurotypical vs. ASD',
-    description:
-      'An app that visualizes Neurotypical vs. Autism Brain Disorder Brain Connectivity using the Harvard-Oxford atlases.',
-    url: 'https://neurotypical-vs-asd.streamlit.app/',
-    imageUrl: '/projects/neuro-vs-asd-min.webp',
-    technologies: ['Python', 'Streamlit', 'Nilearn', 'NetworkX', 'SciPy', 'Matplotlib', 'Pandas'],
-    repoUrl: 'https://github.com/kulaizki/neurotypical-vs-asd'
   },
 ];
 
