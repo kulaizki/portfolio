@@ -67,7 +67,7 @@ export const experiences: Experience[] = [
     ],
     link: 'https://zaigo.ai',
     imageUrl: '/experiences/zaigo-banner.png',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind', 'Supabase', 'Replit', 'Claude Code', 'Digital Marketing', 'Prompt Engineering']
+    technologies: ['Next.js', 'TypeScript', 'MCPs','Prompt Engineering', 'Supabase', 'Replit', 'Claude Code', 'Digital Marketing']
   },
   {
     title: 'Lead Software Engineer',
