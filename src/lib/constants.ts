@@ -6,7 +6,7 @@ export const projects: Project[] = [
     description: 'An interactive web-based viewer for NIfTI neuroimaging files.',
     url: 'https://axonia.vercel.app/',
     imageUrl: '/projects/axonia-min.png',
-    technologies: ['SvelteKit / Svelte', 'NiiVue.js', 'Tailwind CSS', 'TypeScript'],
+    technologies: ['SvelteKit', 'NiiVue.js', 'Tailwind', 'TypeScript'],
     repoUrl: 'https://github.com/kulaizki/axonia'
   },
   {
