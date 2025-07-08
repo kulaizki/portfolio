@@ -1,29 +1,26 @@
 # Fitzsixto's Portfolio
 
-A modern, responsive personal portfolio website showcasing my skills, projects, and professional experience.
+Personal portfolio website built with SvelteKit and TypeScript.
 
-https://github.com/user-attachments/assets/ec65e9d1-6099-4542-8d7a-19343220714b
+## Tech Stack
 
-## 🚀 Features
+- SvelteKit
+- TypeScript
+- Tailwind CSS
+- Vercel
 
-- Responsive design that works on desktop and mobile
-- Custom cursor with animated trail effects
-- Project showcase with technology tags and live/repo links
-- Experience timeline with company details
-- Skills showcase with categorized abilities
-- Smooth scrolling and animations
+## Features
 
-## 🛠️ Built With
+- Responsive design
+- Interactive canvas cursor
+- Project showcase with live demos
+- Professional experience timeline
+- Skills overview
 
-- [SvelteKit](https://kit.svelte.dev/) - The web framework
-- [TypeScript](https://www.typescriptlang.org/) - Type safety
-- [Tailwind CSS](https://tailwindcss.com/) - Styling
-- [Vercel](https://vercel.com/) - Deployment
+## License
 
-## 📄 License
+MIT
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+## Credits
 
-## 🙏 Acknowledgments
-
-- Icons from [Skillicons](https://skillicons.dev/)
+- Icons: [Skillicons](https://skillicons.dev/)
