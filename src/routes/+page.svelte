@@ -7,20 +7,9 @@
   import Footer from './footer.svelte';
   import Contact from './contact.svelte';
   import ScrollToTop from '$lib/components/scroll-to-top.svelte';
-  import CustomCursor from '$lib/components/custom-cursor.svelte';
-
-  let showCursorTrail = false;
-
-  function showCursor() {
-    showCursorTrail = true;
-  }
-
-  function hideCursor() {
-    showCursorTrail = false;
-  }
 </script>
 
-<Hero onEnter={showCursor} onLeave={hideCursor} />
+<Hero />
 
 <div class="bg-gradient-to-br from-gray-950 via-gray-900 to-black">
   <CurrentlyWorking />
@@ -33,5 +22,3 @@
 <Footer />
 
 <ScrollToTop />
-
-<CustomCursor active={showCursorTrail} />
