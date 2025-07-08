@@ -77,7 +77,7 @@
               <div class="flex flex-wrap gap-2 mb-6">
                 <span class="px-3 py-1.5 bg-gray-800/50 text-gray-300 rounded-lg text-sm border border-gray-700/50 group-hover:border-gray-600 transition-colors duration-300">Next.js</span>
                 <span class="px-3 py-1.5 bg-gray-800/50 text-gray-300 rounded-lg text-sm border border-gray-700/50 group-hover:border-gray-600 transition-colors duration-300">TypeScript</span>
-                <span class="px-3 py-1.5 bg-gray-800/50 text-gray-300 rounded-lg text-sm border border-gray-700/50 group-hover:border-gray-600 transition-colors duration-300">OpenAI</span>
+                <span class="px-3 py-1.5 bg-gray-800/50 text-gray-300 rounded-lg text-sm border border-gray-700/50 group-hover:border-gray-600 transition-colors duration-300">Gemini</span>
                 <span class="px-3 py-1.5 bg-gray-800/50 text-gray-300 rounded-lg text-sm border border-gray-700/50 group-hover:border-gray-600 transition-colors duration-300">Supabase</span>
                 <span class="px-3 py-1.5 bg-gray-800/50 text-gray-300 rounded-lg text-sm border border-gray-700/50 group-hover:border-gray-600 transition-colors duration-300">Tailwind CSS</span>
               </div>
