@@ -270,13 +270,15 @@
   onDestroy(() => {
     running = false;
     
-    // Remove event listeners
-    document.removeEventListener('mousemove', handleMouseMove);
-    document.removeEventListener('touchstart', handleTouchStart);
-    document.removeEventListener('touchmove', handleMouseMove);
-    window.removeEventListener('resize', resizeCanvas);
-    window.removeEventListener('focus', handleFocus);
-    window.removeEventListener('blur', handleBlur);
+    // Remove event listeners only in browser
+    if (typeof window !== 'undefined') {
+      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('touchstart', handleTouchStart);
+      document.removeEventListener('touchmove', handleMouseMove);
+      window.removeEventListener('resize', resizeCanvas);
+      window.removeEventListener('focus', handleFocus);
+      window.removeEventListener('blur', handleBlur);
+    }
   });
 </script>
 
