@@ -1,8 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-
-  export let onEnter: () => void;
-  export let onLeave: () => void;
+  import CanvasCursor from '$lib/components/ui/canvas-cursor.svelte';
 
   let isInView = false;
   let applyDelay = true;
@@ -20,11 +18,11 @@
 </script>
 
 <section
-  class="bg-gradient-to-br from-black via-sky-950 to-black text-white min-h-screen flex items-center justify-center"
-  on:mouseenter={onEnter}
-  on:mouseleave={onLeave}
+  class="bg-gradient-to-br from-black via-sky-950 to-black text-white min-h-screen flex items-center justify-center relative"
   aria-label="Hero Section"
 >
+  <!-- Canvas cursor effect for hero section only -->
+  <CanvasCursor />
   <div class="max-w-5xl px-6 text-center">
     <h1
       class="[text-shadow:0_0_10px_rgba(0,242,255,0.5)] text-6xl md:text-9xl font-bold tracking-tight mb-6 bg-gradient-to-r from-sky-300 to-sky-600 bg-clip-text text-transparent select-none transition-all duration-700 ease-out {isInView
