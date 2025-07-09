@@ -59,7 +59,7 @@ export const projects: Project[] = [
 export const experiences: Experience[] = [
   {
     title: 'Software Engineer',
-    company: 'Zaigo Labs',
+    company: 'Zaigo AI',
     date: 'June 2025 - Present',
     responsibilities: [
       'Optimized the company website, developed multiple webapps.',
@@ -67,7 +67,7 @@ export const experiences: Experience[] = [
     ],
     link: 'https://zaigo.ai',
     imageUrl: '/experiences/zaigo-banner.png',
-    technologies: ['Next.js', 'TypeScript', 'MCPs','Prompt Engineering', 'Supabase', 'Replit', 'Claude Code', 'Digital Marketing']
+    technologies: ['Claude Code', 'MCPs', 'Prompt Engineering', 'Next.js', 'TypeScript', 'Supabase', 'Replit', 'Meta Ads']
   },
   {
     title: 'Lead Software Engineer',
