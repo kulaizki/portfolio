@@ -120,7 +120,7 @@ export const experiences: Experience[] = [
   {
     title: 'Lead',
     company: 'Google Developer Groups on Campus - San Carlos',
-    date: 'Aug 2023 - Present',
+    date: 'Aug 2023 - July 2025',
     responsibilities: [
       'Spearheaded 20+ workshops and events covering a wide range of topics',
       'Secured partnerships and sponsorships, including Datacamp.'
