@@ -287,7 +287,7 @@
     bind:this={canvas}
     class="pointer-events-none absolute inset-0"
     style="mix-blend-mode: screen;"
-  />
+  ></canvas>
 </div>
 
 <style>
