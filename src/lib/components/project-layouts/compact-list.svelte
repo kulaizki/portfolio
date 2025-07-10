@@ -7,11 +7,11 @@
 </script>
 
 <div
-  class="group flex gap-4 p-4 rounded-lg bg-gray-900/20 border border-gray-800/50 hover:bg-gray-900/40 hover:border-sky-900/50 transition-all duration-300 {isInView ? 'opacity-100' : 'opacity-0'}"
+  class="group flex flex-col sm:flex-row gap-3 sm:gap-4 p-3 sm:p-4 rounded-lg bg-gray-900/20 border border-gray-800/50 hover:bg-gray-900/40 hover:border-sky-900/50 transition-all duration-300 {isInView ? 'opacity-100' : 'opacity-0'}"
   style={applyDelay ? `transition-delay: ${100 + index * 50}ms` : 'transition-delay: 0ms'}
 >
   <!-- Side Image -->
-  <div class="flex-shrink-0 w-32 md:w-40 aspect-video rounded-md overflow-hidden bg-gray-800">
+  <div class="flex-shrink-0 w-full sm:w-32 md:w-40 aspect-video rounded-md overflow-hidden bg-gray-800">
     {#if project.imageUrl}
       <img
         src={project.imageUrl}
@@ -27,22 +27,25 @@
   
   <!-- Content -->
   <div class="flex-grow min-w-0 flex flex-col justify-center">
-    <h3 class="text-base font-medium text-white mb-1 truncate group-hover:text-sky-300 transition-colors">
+    <h3 class="text-base font-medium text-white mb-1 group-hover:text-sky-300 transition-colors">
       {project.name}
     </h3>
     
-    <p class="text-sm text-gray-400 mb-2 line-clamp-1">
+    <p class="text-sm text-gray-400 mb-2 line-clamp-2 sm:line-clamp-1">
       {project.description}
     </p>
     
-    <div class="flex items-center gap-4">
-      <div class="flex gap-2">
+    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+      <div class="flex gap-2 flex-wrap">
         {#each project.technologies.slice(0, 2) as tech}
           <span class="text-xs text-gray-600">{tech}</span>
         {/each}
+        {#if project.technologies.length > 2}
+          <span class="text-xs text-gray-700 sm:hidden">+{project.technologies.length - 2}</span>
+        {/if}
       </div>
       
-      <div class="flex gap-3 ml-auto">
+      <div class="flex gap-3 sm:ml-auto">
         {#if project.repoUrl}
           <a
             href={project.repoUrl}

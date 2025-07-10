@@ -28,22 +28,24 @@
 
   <div class="mx-auto max-w-4xl px-6">
     <!-- Compact Bar Layout -->
-    <div class="bg-gray-900/10 border border-gray-800/50 rounded-lg p-4 transition-all duration-700 ease-out {isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}"
+    <div class="bg-gray-900/10 border border-gray-800/50 rounded-lg p-4 md:p-6 transition-all duration-700 ease-out {isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}"
       style={applyDelay ? 'transition-delay: 300ms' : 'transition-delay: 0ms'}>
-      <div class="flex items-center gap-4">
+      <div class="flex flex-col sm:flex-row sm:items-center gap-4">
         <div class="flex-1">
           <div class="flex items-center gap-3 mb-2">
             <h3 class="text-lg font-bold text-white">ChatEasy</h3>
             <span class="text-xs text-green-400">• Active</span>
           </div>
-          <div class="flex items-center gap-6 text-sm text-gray-400">
+          <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 text-sm text-gray-400">
             <span>AI Support Platform</span>
+            <span class="hidden sm:inline">•</span>
             <span>75% Complete</span>
-            <span>Next.js • TypeScript • Gemini</span>
+            <span class="hidden sm:inline">•</span>
+            <span class="text-xs sm:text-sm">Next.js • TypeScript • Gemini</span>
           </div>
         </div>
         <a href="https://chateasy-labs.vercel.app/" target="_blank" rel="noopener noreferrer" 
-          class="px-4 py-2 bg-sky-900/30 text-sky-300 rounded-md hover:bg-sky-900/50 transition-colors text-sm">
+          class="self-start sm:self-auto px-4 py-2 bg-sky-900/30 text-sky-300 rounded-md hover:bg-sky-900/50 transition-colors text-sm">
           Demo
         </a>
       </div>
