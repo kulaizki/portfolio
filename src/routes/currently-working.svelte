@@ -21,21 +21,12 @@
     }
   }}
 >
-  <div class="max-w-4xl mx-auto">
-    <div class="mb-12">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-100 bg-gradient-to-r from-sky-300 to-sky-500 bg-clip-text text-transparent pb-1 mb-4 transition-all duration-700 ease-out {isInView
-        ? 'opacity-100 translate-y-0'
-        : 'opacity-0 translate-y-8'}">
-        Currently Working On
-      </h2>
-      <p class="text-lg text-gray-400 transition-all duration-700 ease-out {isInView
-        ? 'opacity-100 translate-y-0'
-        : 'opacity-0 translate-y-8'}"
-        style={applyDelay ? 'transition-delay: 150ms' : 'transition-delay: 0ms'}>
-        Building AI-powered customer support solutions.
-      </p>
-    </div>
-    
+  <div class="mx-auto max-w-6xl px-6">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-sky-300 to-sky-500 bg-clip-text text-transparent pb-1">Currently Working On</h2>
+    <p class="text-lg text-gray-400 mb-12">Building AI-powered customer support solutions.</p>
+  </div>
+
+  <div class="mx-auto max-w-4xl px-6">
     <!-- Compact Bar Layout -->
     <div class="bg-gray-900/10 border border-gray-800/50 rounded-lg p-4 transition-all duration-700 ease-out {isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}"
       style={applyDelay ? 'transition-delay: 300ms' : 'transition-delay: 0ms'}>
