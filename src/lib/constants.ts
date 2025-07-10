@@ -3,7 +3,7 @@ import type { Project, Experience, Skill } from './types';
 export const projects: Project[] = [
   {
     name: 'Axonia',
-    description: 'An interactive web-based viewer for NIfTI neuroimaging files.',
+    description: 'Interactive viewer for brain scan files.',
     url: 'https://axonia.vercel.app/',
     imageUrl: '/projects/axonia-min.png',
     technologies: ['SvelteKit', 'NiiVue.js', 'Tailwind', 'TypeScript'],
@@ -12,7 +12,7 @@ export const projects: Project[] = [
   {
     name: 'Planpokr',
     description: 
-      'A modern, real-time planning poker application for agile teams to estimate user stories efficiently and collaboratively.',
+      'Real-time planning poker for agile teams.',
     url: 'https://planpokr.vercel.app/',
     imageUrl: '/projects/planpokr-min.webp',
     technologies: ['Websockets', 'Supabase', 'Typescript', 'Sveltekit', 'Tailwind', 'Vercel'],
@@ -21,7 +21,7 @@ export const projects: Project[] = [
   {
     name: 'Pokélight',
     description:
-      'A Pokédex app with a gacha simulator that features Pokémon stats using PokeAPI.',
+      'Pokédex with gacha simulator.',
     url: 'https://pokelight-labs.vercel.app/',
     imageUrl: '/projects/pokelight-yellow-min.webp',
     technologies: ['Next.js', 'TypeScript', 'Tailwind', 'PokeAPI', 'Vercel'],
@@ -30,7 +30,7 @@ export const projects: Project[] = [
   {
     name: 'Nexleague',
     description:
-      'An app that provides AI-driven insights and tailored performance analysis to enhance your League of Legends gameplay.',
+      'AI coach for League of Legends gameplay.',
     url: 'https://nexleague.vercel.app/',
     imageUrl: '/projects/nexleague-min.webp',
     technologies: ['SvelteKit', 'TypeScript', 'Gemini API', 'Riot API', 'Tailwind', 'Vercel'],
@@ -39,7 +39,7 @@ export const projects: Project[] = [
   {
     name: 'z1',
     description:
-      'An app that provides personalized AI-powered gameplay analytics and strategic guidance for mastering Dota 2.',
+      'AI analytics for Dota 2 mastery.',
     url: 'https://z1-dota.vercel.app/',
     imageUrl: '/projects/z1-min.webp',
     technologies: ['SvelteKit', 'TypeScript', 'OpenDota API','Tailwind', 'Vercel'],
@@ -48,7 +48,7 @@ export const projects: Project[] = [
   {
     name: 'Echo',
     description:
-      'An AI-powered web app designed to be a space for users to explore their emotions through guided conversation.',
+      'AI companion for emotional exploration.',
     url: 'https://echobuddy.vercel.app',
     imageUrl: '/projects/echo-chat.webp',
     technologies: ['SvelteKit', 'Typescript', 'Gemini API', 'Tailwind', 'Vercel'],
