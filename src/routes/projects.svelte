@@ -1,6 +1,6 @@
 <script lang="ts">
   import { projects } from '$lib/constants';
-  import ProjectItem from '$lib/components/project-item.svelte';
+  import CompactList from '$lib/components/project-layouts/compact-list.svelte';
   import { inview } from 'svelte-inview';
 
   export let className: string = '';
@@ -37,15 +37,12 @@
         Selected projects showcasing my skills and interests.
       </p>
     </div>
-    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <!-- Compact List Layout -->
+    <div class="space-y-3 max-w-4xl mx-auto">
       {#each projects as project, i (project.url)}
-        <div
-          class="transition-all duration-500 ease-out {isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}"
-          style={applyDelay ? `transition-delay: ${300 + i * 150}ms` : 'transition-delay: 0ms'}
-        >
-          <ProjectItem {project} />
-        </div>
+        <CompactList {project} index={i} {isInView} {applyDelay} />
       {/each}
     </div>
   </div>
-</section> 
+</section>
+
