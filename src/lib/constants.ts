@@ -71,13 +71,13 @@ export const experiences: Experience[] = [
   },
   {
     title: 'Lead Software Engineer',
-    company: 'Farmtri',
+    company: 'Farmtri AI',
     date: 'Aug 2024 - Present',
     responsibilities: [
       'Architectured, developed, and optimized the company website.',
       'Managed full-stack development and hosting.'
     ],
-    link: 'https://farmtri.com',
+    link: 'https://farmtri.ai',
     imageUrl: '/experiences/farmtri-banner.png',
     technologies: ['Next.js', 'TypeScript', 'Tailwind', 'Supabase', 'Vercel']
   },
