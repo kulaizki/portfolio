@@ -4,7 +4,7 @@ export const projects: Project[] = [
   {
     name: 'Axonia',
     description: 'Interactive viewer for brain scan files.',
-    url: 'https://axonia.vercel.app/',
+    url: 'https://axonia.fitzsixto.com/',
     imageUrl: '/projects/axonia-min.png',
     technologies: ['SvelteKit', 'NiiVue.js', 'Tailwind', 'TypeScript'],
     repoUrl: 'https://github.com/kulaizki/axonia'
@@ -13,7 +13,7 @@ export const projects: Project[] = [
     name: 'Planpokr',
     description: 
       'Real-time planning poker for agile teams.',
-    url: 'https://planpokr.vercel.app/',
+    url: 'https://planpokr.fitzsixto.com/',
     imageUrl: '/projects/planpokr-min.webp',
     technologies: ['Websockets', 'Supabase', 'Typescript', 'Sveltekit', 'Tailwind', 'Vercel'],
     repoUrl: 'https://github.com/kulaizki/planpokr/'
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     name: 'Pokélight',
     description:
       'Pokédex with gacha simulator.',
-    url: 'https://pokelight-labs.vercel.app/',
+    url: 'https://pokelight.fitzsixto.com/',
     imageUrl: '/projects/pokelight-yellow-min.webp',
     technologies: ['Next.js', 'TypeScript', 'Tailwind', 'PokeAPI', 'Vercel'],
     repoUrl: 'https://github.com/kulaizki/pokelight'
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     name: 'z1',
     description:
       'AI analytics for Dota 2 mastery.',
-    url: 'https://z1-dota.vercel.app/',
+    url: 'https://z1.fitzsixto.com/',
     imageUrl: '/projects/z1-min.webp',
     technologies: ['SvelteKit', 'TypeScript', 'OpenDota API','Tailwind', 'Vercel'],
     repoUrl: 'https://github.com/kulaizki/z1'
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     name: 'Echo',
     description:
       'AI companion for emotional exploration.',
-    url: 'https://echobuddy.vercel.app',
+    url: 'https://echo.fitzsixto.com',
     imageUrl: '/projects/echo-chat.webp',
     technologies: ['SvelteKit', 'Typescript', 'Gemini API', 'Tailwind', 'Vercel'],
     repoUrl: 'https://github.com/kulaizki/echo'
