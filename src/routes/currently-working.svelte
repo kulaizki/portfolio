@@ -44,7 +44,7 @@
             <span class="text-xs sm:text-sm">Next.js • TypeScript • Gemini</span>
           </div>
         </div>
-        <a href="https://chateasy-labs.vercel.app/" target="_blank" rel="noopener noreferrer" 
+        <a href="https://chateasy.fitzsixto.com/" target="_blank" rel="noopener noreferrer" 
           class="self-start sm:self-auto px-4 py-2 bg-sky-900/30 text-sky-300 rounded-md hover:bg-sky-900/50 transition-colors text-sm">
           Demo
         </a>
