@@ -133,9 +133,9 @@ export const experiences: Experience[] = [
 function getSkillCategory(skillName: string): Skill['category'] {
   const lowerCaseName = skillName.toLowerCase();
   if (['svelte', 'next.js', 'react', 'tailwind'].includes(lowerCaseName)) return 'Frameworks';
-  if (['typescript', 'javascript', 'python', 'sql'].includes(lowerCaseName)) return 'Languages';
-  if (['supabase', 'firebase', 'mysql'].includes(lowerCaseName)) return 'Databases';
-  if (['git', 'vercel', 'linux', 'aws', 'tensorflow', 'figma', 'n8n', 'docker', 'cloudflare', 'gcp', 'gemini'].includes(lowerCaseName)) return 'Tools';
+  if (['typescript', 'python', 'sql', 'solidity'].includes(lowerCaseName)) return 'Languages';
+  if (['supabase', 'firebase', 'mysql', 'redis'].includes(lowerCaseName)) return 'Databases';
+  if (['git', 'vercel', 'linux', 'aws', 'tensorflow', 'figma', 'n8n', 'docker', 'cloudflare', 'gcp', 'gemini', 'obsidian', 'vim'].includes(lowerCaseName)) return 'Tools';
   return 'Tools';
 }
 
@@ -145,15 +145,18 @@ const rawSkills = [
   { skillName: 'React', skillUrl: 'https://reactjs.org/', skillIcon: 'https://skillicons.dev/icons?i=react' },
   { skillName: 'Tailwind', skillUrl: 'https://tailwindcss.com/', skillIcon: 'https://skillicons.dev/icons?i=tailwind' },
   { skillName: 'Typescript', skillUrl: 'https://www.typescriptlang.org/', skillIcon: 'https://skillicons.dev/icons?i=typescript' },
-  { skillName: 'Javascript', skillUrl: 'https://www.javascript.com/', skillIcon: 'https://skillicons.dev/icons?i=javascript' },
+  { skillName: 'Solidity', skillUrl: 'https://soliditylang.org/', skillIcon: 'https://skillicons.dev/icons?i=solidity' },
   { skillName: 'Supabase', skillUrl: 'https://supabase.io/', skillIcon: 'https://skillicons.dev/icons?i=supabase' },
   { skillName: 'Firebase', skillUrl: 'https://firebase.google.com/', skillIcon: 'https://skillicons.dev/icons?i=firebase' },
+  { skillName: 'Redis', skillUrl: 'https://redis.io/', skillIcon: 'https://skillicons.dev/icons?i=redis' },
   { skillName: 'Git', skillUrl: 'https://git-scm.com/', skillIcon: 'https://skillicons.dev/icons?i=git' },
   { skillName: 'Vercel', skillUrl: 'https://vercel.com/', skillIcon: 'https://skillicons.dev/icons?i=vercel' },
   { skillName: 'Linux', skillUrl: 'https://www.linux.org/', skillIcon: 'https://skillicons.dev/icons?i=linux' },
   { skillName: 'Python', skillUrl: 'https://www.python.org/', skillIcon: 'https://skillicons.dev/icons?i=python' },
   { skillName: 'SQL', skillUrl: 'https://www.mysql.com/', skillIcon: 'https://skillicons.dev/icons?i=mysql' },
   { skillName: 'Figma', skillUrl: 'https://www.figma.com/', skillIcon: 'https://skillicons.dev/icons?i=figma' },
+  { skillName: 'Obsidian', skillUrl: 'https://obsidian.md/', skillIcon: 'https://skillicons.dev/icons?i=obsidian' },
+  { skillName: 'Vim', skillUrl: 'https://www.vim.org/', skillIcon: 'https://skillicons.dev/icons?i=vim' },
   { skillName: 'Docker', skillUrl: 'https://www.docker.com/', skillIcon: 'https://skillicons.dev/icons?i=docker' },
   { skillName: 'Cloudflare', skillUrl: 'https://www.cloudflare.com/', skillIcon: 'https://skillicons.dev/icons?i=cloudflare' },
   { skillName: 'n8n', skillUrl: 'https://n8n.io/', skillIcon: '/images/n8n-logo.jpg' },
