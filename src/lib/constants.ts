@@ -5,6 +5,8 @@ export const projects: Project[] = [
     name: 'Pawnz',
     description:
       'Opensea-inspired NFT marketplace prototype (frontend only).',
+    longDescription:
+      'Opensea-inspired NFT marketplace prototype focused on the neon Pawnz brand—features landing/login, wallet-like UI, and browsing flows built as a front-end only concept.',
     url: 'https://pawnz-labs.vercel.app/',
     imageUrl: '/projects/pawnz-min.png',
     technologies: ['Next.js', 'TypeScript', 'Tailwind', 'Vercel'],
@@ -14,6 +16,8 @@ export const projects: Project[] = [
     name: 'payroll.finance',
     description:
       'Multi-chain EIP-712 payroll system with ETH and BSC mainnet support (private repository).',
+    longDescription:
+      'Multi-chain EIP-712 payroll system with CSV/Sheets ingestion, fee strategies, signature capture, and batch broadcasting across Ethereum and BSC mainnets (code in private repository).',
     url: 'https://payroll.finance/',
     imageUrl: '/projects/payroll-min.png',
     technologies: ['Next.js', 'TypeScript', 'Ethers.js', 'RainbowKit', 'Tailwind']
@@ -21,6 +25,8 @@ export const projects: Project[] = [
   {
     name: 'Axonia',
     description: 'Interactive viewer for brain fMRI scan files.',
+    longDescription:
+      'Interactive viewer for brain fMRI scans using NiiVue for volumetric rendering, with lightweight Svelte UI to explore slices and volumes directly in the browser.',
     url: 'https://axonia.fitzsixto.com/',
     imageUrl: '/projects/axonia-min.png',
     technologies: ['SvelteKit', 'NiiVue.js', 'Tailwind', 'TypeScript'],
@@ -30,6 +36,8 @@ export const projects: Project[] = [
     name: 'Pokélight',
     description:
       'Pokédex with gacha simulator.',
+    longDescription:
+      'Pokédex web app with a playful gacha simulator, team management, and rapid search built on top of PokeAPI with responsive Next.js + Tailwind UI.',
     url: 'https://pokelight.fitzsixto.com/',
     imageUrl: '/projects/pokelight-yellow-min.webp',
     technologies: ['Next.js', 'TypeScript', 'Tailwind', 'PokeAPI', 'Vercel'],
@@ -39,6 +47,8 @@ export const projects: Project[] = [
     name: 'Nexleague',
     description:
       'AI coach for League of Legends gameplay.',
+    longDescription:
+      'AI coaching assistant for League of Legends: ingests match data, provides build/rune suggestions, and chat-based feedback powered by Riot + Gemini APIs.',
     url: 'https://nexleague.vercel.app/',
     imageUrl: '/projects/nexleague-min.webp',
     technologies: ['SvelteKit', 'TypeScript', 'Gemini API', 'Riot API', 'Tailwind', 'Vercel'],
@@ -48,6 +58,8 @@ export const projects: Project[] = [
     name: 'z1',
     description:
       'AI analytics for Dota 2 mastery.',
+    longDescription:
+      'Dota 2 analytics dashboard that blends OpenDota stats with lightweight AI summaries to surface drafts, timing, and performance insights.',
     url: 'https://z1.fitzsixto.com/',
     imageUrl: '/projects/z1-min.webp',
     technologies: ['SvelteKit', 'TypeScript', 'OpenDota API','Tailwind', 'Vercel'],
@@ -57,6 +69,8 @@ export const projects: Project[] = [
     name: 'Echo',
     description:
       'AI companion for emotional exploration.',
+    longDescription:
+      'AI companion for reflective journaling and emotional exploration, with tone-aware prompts and memory anchored to Supabase storage.',
     url: 'https://echo.fitzsixto.com',
     imageUrl: '/projects/echo-chat.webp',
     technologies: ['SvelteKit', 'Typescript', 'Gemini API', 'Tailwind', 'Vercel'],
@@ -66,6 +80,8 @@ export const projects: Project[] = [
     name: 'Planpokr',
     description: 
       'Real-time planning poker for agile teams.',
+    longDescription:
+      'Real-time planning poker for agile teams with Supabase + websockets for rooms, live estimation, and lightweight facilitator controls.',
     url: 'https://planpokr.fitzsixto.com/',
     imageUrl: '/projects/planpokr-min.webp',
     technologies: ['Websockets', 'Supabase', 'Typescript', 'Sveltekit', 'Tailwind', 'Vercel'],
