@@ -20,7 +20,7 @@ export const projects: Project[] = [
       'Multi-chain EIP-712 payroll system with CSV/Sheets ingestion, fee strategies, signature capture, and batch broadcasting across Ethereum and BSC mainnets (code in private repository).',
     url: 'https://payroll.finance/',
     imageUrl: '/projects/payroll-min.png',
-    technologies: ['Next.js', 'TypeScript', 'Ethers.js', 'RainbowKit', 'Tailwind']
+    technologies: ['Solidity', 'TypeScript', 'Foundry', 'wagmi', 'Next.js', 'RainbowKit', 'Tailwind']
   },
   {
     name: 'Axonia',
@@ -44,15 +44,15 @@ export const projects: Project[] = [
     repoUrl: 'https://github.com/kulaizki/pokelight'
   },
   {
-    name: 'Nexleague',
-    description:
-      'AI coach for League of Legends gameplay.',
+    name: 'Planpokr',
+    description: 
+      'Real-time planning poker for agile teams.',
     longDescription:
-      'AI coaching assistant for League of Legends: ingests match data, provides build/rune suggestions, and chat-based feedback powered by Riot + Gemini APIs.',
-    url: 'https://nexleague.vercel.app/',
-    imageUrl: '/projects/nexleague-min.webp',
-    technologies: ['SvelteKit', 'TypeScript', 'Gemini API', 'Riot API', 'Tailwind', 'Vercel'],
-    repoUrl: 'https://github.com/kulaizki/nexleague'
+      'Real-time planning poker for agile teams with Supabase + websockets for rooms, live estimation, and lightweight facilitator controls.',
+    url: 'https://planpokr.fitzsixto.com/',
+    imageUrl: '/projects/planpokr-min.webp',
+    technologies: ['Websockets', 'Supabase', 'Typescript', 'Sveltekit', 'Tailwind', 'Vercel'],
+    repoUrl: 'https://github.com/kulaizki/planpokr/'
   },
   {
     name: 'z1',
@@ -77,15 +77,15 @@ export const projects: Project[] = [
     repoUrl: 'https://github.com/kulaizki/echo'
   },
   {
-    name: 'Planpokr',
-    description: 
-      'Real-time planning poker for agile teams.',
+    name: 'Nexleague',
+    description:
+      'AI coach for League of Legends gameplay.',
     longDescription:
-      'Real-time planning poker for agile teams with Supabase + websockets for rooms, live estimation, and lightweight facilitator controls.',
-    url: 'https://planpokr.fitzsixto.com/',
-    imageUrl: '/projects/planpokr-min.webp',
-    technologies: ['Websockets', 'Supabase', 'Typescript', 'Sveltekit', 'Tailwind', 'Vercel'],
-    repoUrl: 'https://github.com/kulaizki/planpokr/'
+      'AI coaching assistant for League of Legends: ingests match data, provides build/rune suggestions, and chat-based feedback powered by Riot + Gemini APIs.',
+    url: 'https://nexleague.vercel.app/',
+    imageUrl: '/projects/nexleague-min.webp',
+    technologies: ['SvelteKit', 'TypeScript', 'Gemini API', 'Riot API', 'Tailwind', 'Vercel'],
+    repoUrl: 'https://github.com/kulaizki/nexleague'
   },
 ];
 
