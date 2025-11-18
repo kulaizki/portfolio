@@ -2,21 +2,21 @@ import type { Project, Experience, Skill } from './types';
 
 export const projects: Project[] = [
   {
+    name: 'Pawnz',
+    description:
+      'Opensea-inspired NFT marketplace prototype (frontend only).',
+    url: 'https://pawnz-labs.vercel.app/',
+    imageUrl: '/projects/pawnz-min.png',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind', 'Vercel'],
+    repoUrl: 'https://github.com/kulaizki/pawnz'
+  },
+  {
     name: 'Axonia',
     description: 'Interactive viewer for brain scan files.',
     url: 'https://axonia.fitzsixto.com/',
     imageUrl: '/projects/axonia-min.png',
     technologies: ['SvelteKit', 'NiiVue.js', 'Tailwind', 'TypeScript'],
     repoUrl: 'https://github.com/kulaizki/axonia'
-  },
-  {
-    name: 'Planpokr',
-    description: 
-      'Real-time planning poker for agile teams.',
-    url: 'https://planpokr.fitzsixto.com/',
-    imageUrl: '/projects/planpokr-min.webp',
-    technologies: ['Websockets', 'Supabase', 'Typescript', 'Sveltekit', 'Tailwind', 'Vercel'],
-    repoUrl: 'https://github.com/kulaizki/planpokr/'
   },
   {
     name: 'Pokélight',
@@ -53,6 +53,15 @@ export const projects: Project[] = [
     imageUrl: '/projects/echo-chat.webp',
     technologies: ['SvelteKit', 'Typescript', 'Gemini API', 'Tailwind', 'Vercel'],
     repoUrl: 'https://github.com/kulaizki/echo'
+  },
+  {
+    name: 'Planpokr',
+    description: 
+      'Real-time planning poker for agile teams.',
+    url: 'https://planpokr.fitzsixto.com/',
+    imageUrl: '/projects/planpokr-min.webp',
+    technologies: ['Websockets', 'Supabase', 'Typescript', 'Sveltekit', 'Tailwind', 'Vercel'],
+    repoUrl: 'https://github.com/kulaizki/planpokr/'
   },
 ];
 
