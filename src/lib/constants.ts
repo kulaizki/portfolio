@@ -11,6 +11,14 @@ export const projects: Project[] = [
     repoUrl: 'https://github.com/kulaizki/pawnz'
   },
   {
+    name: 'payroll.finance',
+    description:
+      'Private multi-chain EIP-712 payroll system with ETH and BSC mainnet support.',
+    url: 'https://payroll.finance/',
+    imageUrl: '/projects/payroll-min.png',
+    technologies: ['Next.js', 'TypeScript', 'Ethers.js', 'RainbowKit', 'Tailwind']
+  },
+  {
     name: 'Axonia',
     description: 'Interactive viewer for brain scan files.',
     url: 'https://axonia.fitzsixto.com/',
