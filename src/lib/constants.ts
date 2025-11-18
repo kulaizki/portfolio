@@ -13,14 +13,14 @@ export const projects: Project[] = [
   {
     name: 'payroll.finance',
     description:
-      'Private multi-chain EIP-712 payroll system with ETH and BSC mainnet support.',
+      'Multi-chain EIP-712 payroll system with ETH and BSC mainnet support (private repository).',
     url: 'https://payroll.finance/',
     imageUrl: '/projects/payroll-min.png',
     technologies: ['Next.js', 'TypeScript', 'Ethers.js', 'RainbowKit', 'Tailwind']
   },
   {
     name: 'Axonia',
-    description: 'Interactive viewer for brain scan files.',
+    description: 'Interactive viewer for brain fMRI scan files.',
     url: 'https://axonia.fitzsixto.com/',
     imageUrl: '/projects/axonia-min.png',
     technologies: ['SvelteKit', 'NiiVue.js', 'Tailwind', 'TypeScript'],
