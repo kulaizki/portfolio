@@ -23,9 +23,9 @@
 		class="block cursor-default {experience.link ? 'group/link cursor-pointer' : ''}"
 	>
 		<time class="mb-1 text-xs font-normal leading-none text-gray-500 uppercase tracking-wider block">{experience.date}</time>
-		<h3 class="text-lg font-semibold text-gray-100 group-hover/link:text-sky-300 transition-colors duration-200 mt-1">
-			{experience.title} <span class="font-medium text-gray-300">·</span> 
-			<span class="font-medium text-gray-100 inline-block group-hover/link:text-sky-300 transition-colors duration-200">
+		<h3 class="text-lg font-semibold text-white group-hover/link:text-sky-300 transition-colors duration-200 mt-1">
+			{experience.title} <span class="font-medium text-gray-400">·</span> 
+			<span class="font-medium text-white inline-block group-hover/link:text-sky-300 transition-colors duration-200">
 				{experience.company}
 				{#if experience.link}
 					<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' class='w-4 h-4 inline-block ml-1 opacity-70 group-hover/link:opacity-100 translate-y-[-1px] group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform duration-200 ease-out'>
@@ -43,7 +43,7 @@
 		{#if experience.technologies && experience.technologies.length > 0}
 			<div class="flex flex-wrap gap-2 mt-4">
 				{#each experience.technologies as tech}
-					<span class="inline-flex items-center rounded-full bg-sky-900/50 px-3 py-1 text-xs font-medium leading-5 text-sky-300">
+					<span class="inline-flex items-center rounded-full bg-gray-800 px-3 py-1 text-xs font-medium leading-5 text-gray-300 border border-gray-700">
 						{tech}
 					</span>
 				{/each}

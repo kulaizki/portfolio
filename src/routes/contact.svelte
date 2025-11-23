@@ -133,7 +133,7 @@
 >
   <div class="max-w-2xl mx-auto px-6">
     <h2
-      class="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-sky-300 to-sky-500 bg-clip-text text-transparent pb-1 transition-all duration-700 ease-out text-center {isInView
+      class="text-4xl md:text-5xl font-bold mb-6 text-white tracking-tight transition-all duration-700 ease-out text-center {isInView
         ? 'opacity-100 translate-y-0'
         : 'opacity-0 translate-y-8'}"
       style={applyDelay ? `transition-delay: 200ms` : 'transition-delay: 0ms'}
@@ -141,7 +141,7 @@
       Contact
     </h2>
     <p
-      class="text-md md:text-xl text-gray-300 mb-8 text-center transition-all duration-700 ease-out {isInView
+      class="text-xl text-gray-400 mb-12 text-center font-light leading-relaxed transition-all duration-700 ease-out {isInView
         ? 'opacity-100 translate-y-0'
         : 'opacity-0 translate-y-8'}"
       style={applyDelay ? `transition-delay: 350ms` : 'transition-delay: 0ms'}
@@ -158,7 +158,7 @@
     >
       <!-- Email field -->
       <div>
-        <label for="email" class="block text-sm font-medium text-gray-300 mb-2">
+        <label for="email" class="block text-sm font-medium text-gray-400 mb-2">
           Email
         </label>
         <input
@@ -177,7 +177,7 @@
       
       <!-- Subject field -->
       <div>
-        <label for="subject" class="block text-sm font-medium text-gray-300 mb-2">
+        <label for="subject" class="block text-sm font-medium text-gray-400 mb-2">
           Subject
         </label>
         <input
@@ -196,7 +196,7 @@
       
       <!-- Message field -->
       <div>
-        <label for="message" class="block text-sm font-medium text-gray-300 mb-2">
+        <label for="message" class="block text-sm font-medium text-gray-400 mb-2">
           Message
         </label>
         <textarea

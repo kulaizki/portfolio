@@ -12,7 +12,7 @@
 
 <section
   id="skills"
-  class="py-20 text-white overflow-hidden {className}"
+  class="py-32 text-white overflow-hidden {className}"
 	use:inview={{ threshold: 0.1, unobserveOnEnter: true }}
 	on:inview_change={(event) => {
     if (event.detail.inView && !hasAnimated) {
@@ -21,9 +21,11 @@
     }
   }}
 >
-  <div class="mx-auto max-w-6xl px-6">
-    <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-sky-300 to-sky-500 bg-clip-text text-transparent pb-1">Skills</h2>
-    <p class="text-lg text-gray-400 mb-12">Technologies and tools I frequently use.</p>
+  <div class="mx-auto max-w-6xl px-6 mb-16">
+    <div class="transition-all duration-1000 ease-out {isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}">
+      <h2 class="mb-6 text-4xl font-bold text-white md:text-5xl tracking-tight">Skills & Tools</h2>
+      <p class="text-xl text-gray-400 max-w-2xl font-light leading-relaxed">Technologies I work with to bring ideas to life.</p>
+    </div>
   </div>
 
   <div
