@@ -76,7 +76,24 @@
 	<link rel="icon" href="/images/favicon.png" />
 </svelte:head>
 
-<main>
+<nav class="fixed top-0 left-0 right-0 z-50 px-6 py-4 transition-all duration-300">
+	<div class="max-w-7xl mx-auto">
+		<div class="bg-gray-900/40 backdrop-blur-md border border-white/10 rounded-full px-6 py-3 flex items-center justify-between shadow-lg">
+			<a href="#top" class="block w-8 h-8 transition-transform hover:scale-110 duration-300">
+				<img src="/images/favicon.png" alt="Fitzsixto" class="w-full h-full" />
+			</a>
+			
+			<div class="hidden md:flex items-center gap-8">
+				<a href="#experience" class="text-sm text-gray-300 hover:text-white transition-colors">Experience</a>
+				<a href="#projects" class="text-sm text-gray-300 hover:text-white transition-colors">Projects</a>
+				<a href="#skills" class="text-sm text-gray-300 hover:text-white transition-colors">Skills</a>
+				<a href="#contact" class="px-4 py-2 bg-white text-black rounded-full text-sm font-medium hover:bg-gray-200 transition-colors">Contact</a>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<main class="relative z-10">
 	{@render children()}
 </main>
 

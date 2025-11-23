@@ -20,80 +20,58 @@
 </script>
 
 <section
-  class="bg-gradient-to-br from-black via-sky-950 to-black text-white min-h-screen flex items-center justify-center relative"
+  id="top"
+  class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-950"
   aria-label="Hero Section"
 >
+  <!-- Background Effects -->
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,_rgba(56,189,248,0.1),rgba(0,0,0,0))]"></div>
+  <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+
   <!-- Canvas cursor effect for hero section only -->
   <CanvasCursor />
-  <div class="max-w-5xl px-6 text-center">
+  
+  <div class="relative z-10 max-w-5xl px-6 text-center">
     <h1
-      class="[text-shadow:0_0_10px_rgba(0,242,255,0.5)] text-6xl md:text-9xl font-bold tracking-tight mb-6 bg-gradient-to-r from-sky-300 to-sky-600 bg-clip-text text-transparent select-none transition-all duration-700 ease-out {isInView
-        ? 'opacity-100 translate-y-0'
-        : 'opacity-0 translate-y-10'}"
+      class="text-7xl md:text-9xl font-bold tracking-tight mb-8 text-white select-none transition-all duration-1000 ease-out {isInView
+        ? 'opacity-100 translate-y-0 blur-0'
+        : 'opacity-0 translate-y-10 blur-lg'}"
       style={applyDelay ? 'transition-delay: 200ms' : 'transition-delay: 0ms'}
     >
       Fitzsixto
     </h1>
+    
     <p
-      class="text-xl md:text-2xl text-sky-300 [text-shadow:0_0_25px_theme(colors.sky.600)] mb-12 select-none transition-all duration-700 ease-out {isInView
+      class="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto mb-12 font-light leading-relaxed select-none transition-all duration-1000 ease-out {isInView
         ? 'opacity-100 translate-y-0'
         : 'opacity-0 translate-y-10'}"
-      style={applyDelay ? 'transition-delay: 350ms' : 'transition-delay: 0ms'}
+      style={applyDelay ? 'transition-delay: 400ms' : 'transition-delay: 0ms'}
     >
       Weaving insights from neuroscience into the world of AI and code.
     </p>
-    <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
+
+    <div class="flex flex-wrap justify-center items-center gap-6">
       <div
-        class="transition-all duration-500 ease-out {isInView ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}"
-        style={applyDelay ? 'transition-delay: 500ms' : 'transition-delay: 0ms'}
+        class="transition-all duration-700 ease-out {isInView ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}"
+        style={applyDelay ? 'transition-delay: 600ms' : 'transition-delay: 0ms'}
       >
         <a
           href="#experience"
-          class="group relative z-0 inline-flex items-center gap-2 px-6 py-3 text-white rounded-full shadow-lg overflow-hidden transition-all duration-300 {buttonTheme.primary} hover:shadow-xl"
-          title="Explore my experience"
+          class="group relative inline-flex items-center gap-2 px-8 py-4 bg-white text-black rounded-full text-sm font-medium hover:bg-gray-200 transition-all duration-300 hover:scale-105"
         >
-          {#if buttonContent.primary.icon !== 'none'}
-            <ButtonIcon icon={buttonContent.primary.icon} class="fill-white" />
-          {/if}
-          {#if buttonContent.primary.text}
-            {buttonContent.primary.text}
-          {/if}
+          Explore Work
         </a>
       </div>
+      
       <div
-        class="transition-all duration-500 ease-out {isInView ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}"
-        style={applyDelay ? 'transition-delay: 650ms' : 'transition-delay: 0ms'}
+        class="transition-all duration-700 ease-out {isInView ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}"
+        style={applyDelay ? 'transition-delay: 700ms' : 'transition-delay: 0ms'}
       >
         <a
           href="#contact"
-          class="group relative z-0 inline-flex items-center gap-2 px-6 py-3 rounded-full shadow-lg overflow-hidden transition-all duration-300 {buttonTheme.secondary}"
-          title="Get in touch"
+          class="group relative inline-flex items-center gap-2 px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 text-white rounded-full text-sm font-medium hover:bg-white/10 transition-all duration-300 hover:scale-105"
         >
-          {#if buttonContent.secondary.icon !== 'none'}
-            <ButtonIcon icon={buttonContent.secondary.icon} class="fill-current transition-colors duration-300" />
-          {/if}
-          {#if buttonContent.secondary.text}
-            {buttonContent.secondary.text}
-          {/if}
-        </a>
-      </div>
-      <div
-        class="transition-all duration-500 ease-out {isInView ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}"
-        style={applyDelay ? 'transition-delay: 800ms' : 'transition-delay: 0ms'}
-      >
-        <a
-          href="https://github.com/kulaizki"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="group relative z-0 inline-flex items-center gap-2 px-6 py-3 rounded-full shadow-lg overflow-hidden transition-all duration-300 {buttonTheme.tertiary}"
-          title="Check out my code on GitHub"
-        >
-          {#if buttonContent.tertiary.icon !== 'none'}
-            <ButtonIcon icon={buttonContent.tertiary.icon} class="fill-current transition-colors duration-300" />
-          {/if}
-          {#if buttonContent.tertiary.text}
-            {buttonContent.tertiary.text}
-          {/if}
+          Get in Touch
         </a>
       </div>
     </div>
