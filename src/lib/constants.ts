@@ -90,6 +90,7 @@ export const projects: Project[] = [
 ];
 
 export const experiences: Experience[] = [
+
   {
     title: 'Software Engineer, AI/ML',
     company: 'Zaigo Labs',
@@ -112,6 +113,18 @@ export const experiences: Experience[] = [
     link: 'https://farmtri.ai',
     imageUrl: '/experiences/farmtri-banner.png',
     technologies: ['Next.js', 'TypeScript', 'Tailwind', 'Supabase', 'Vercel']
+  },
+  {
+    title: 'Blockchain Engineer',
+    company: 'Gaply',
+    date: 'Oct 2025 - Dec 2025',
+    responsibilities: [
+      'Developed smart contracts using Solidity on Ethereum and EVM chains.',
+      'Implemented Merkle Distributor and Relayer Wallets.',
+    ],
+    link: 'https://gaply.org/',
+    imageUrl: '/experiences/gaply.png',
+    technologies: ['Solidity', 'Ethereum', 'Blockchain', 'EVM', 'Merkle Distributor', 'Relayer Wallets', 'Smart Contracts']
   },
   {
     title: 'Mobile Developer',
