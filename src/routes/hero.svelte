@@ -8,14 +8,16 @@
   let applyDelay = $state(true);
 
   onMount(() => {
-    // Start the animation shortly after the component mounts
+    // Wait for intro loader to complete before starting hero animations
+    // The intro loader duration is ~2200ms, so we start after that
     setTimeout(() => {
       isInView = true;
-    }, 100);
+    }, 2400);
+
     // Remove the transition delay after the initial animation completes
     setTimeout(() => {
       applyDelay = false;
-    }, 1200); // Duration should be enough for all staggered animations
+    }, 4000);
   });
 </script>
 
@@ -30,30 +32,34 @@
 
   <!-- Canvas cursor effect for hero section only -->
   <CanvasCursor />
-  
+
   <div class="relative z-10 max-w-5xl px-6 text-center">
+    <!-- Title with smooth blur and slide animation -->
     <h1
-      class="text-7xl md:text-9xl font-bold tracking-tight mb-8 text-white select-none transition-all duration-1000 ease-out {isInView
-        ? 'opacity-100 translate-y-0 blur-0'
-        : 'opacity-0 translate-y-10 blur-lg'}"
-      style={applyDelay ? 'transition-delay: 200ms' : 'transition-delay: 0ms'}
+      class="text-7xl md:text-9xl font-bold tracking-tight mb-8 text-white select-none
+             transition-all duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)]
+             {isInView ? 'opacity-100 translate-y-0 blur-0' : 'opacity-0 translate-y-8 blur-sm'}"
+      style={applyDelay ? 'transition-delay: 0ms' : 'transition-delay: 0ms'}
     >
       Fitzsixto
     </h1>
-    
+
+    <!-- Subtitle with smooth fade and slide -->
     <p
-      class="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto mb-12 font-light leading-relaxed select-none transition-all duration-1000 ease-out {isInView
-        ? 'opacity-100 translate-y-0'
-        : 'opacity-0 translate-y-10'}"
-      style={applyDelay ? 'transition-delay: 400ms' : 'transition-delay: 0ms'}
+      class="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto mb-12 font-light leading-relaxed select-none
+             transition-all duration-[1000ms] ease-[cubic-bezier(0.16,1,0.3,1)]
+             {isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}"
+      style={applyDelay ? 'transition-delay: 200ms' : 'transition-delay: 0ms'}
     >
       Weaving insights from neuroscience into the world of AI and code.
     </p>
 
+    <!-- Buttons with smooth scale and fade -->
     <div class="flex flex-wrap justify-center items-center gap-6">
       <div
-        class="transition-all duration-700 ease-out {isInView ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}"
-        style={applyDelay ? 'transition-delay: 600ms' : 'transition-delay: 0ms'}
+        class="transition-all duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)]
+               {isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}"
+        style={applyDelay ? 'transition-delay: 400ms' : 'transition-delay: 0ms'}
       >
         <a
           href="#experience"
@@ -62,10 +68,11 @@
           Explore Work
         </a>
       </div>
-      
+
       <div
-        class="transition-all duration-700 ease-out {isInView ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}"
-        style={applyDelay ? 'transition-delay: 700ms' : 'transition-delay: 0ms'}
+        class="transition-all duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)]
+               {isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}"
+        style={applyDelay ? 'transition-delay: 500ms' : 'transition-delay: 0ms'}
       >
         <a
           href="#contact"

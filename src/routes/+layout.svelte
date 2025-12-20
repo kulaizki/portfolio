@@ -4,11 +4,13 @@
 	import Lenis from 'lenis';
 	import { onMount, onDestroy } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
-	
+	import IntroLoader from '$lib/components/three/intro-loader.svelte';
+
 	let { children } = $props();
 	let lenisInstance: Lenis | null = null;
 	let rafId: number | null = null;
 	let isMenuOpen = $state(false);
+	let showIntro = $state(true);
 	
 	onMount(() => {
 		// Initialize Lenis
@@ -78,7 +80,12 @@
 	<link rel="icon" href="/images/favicon.png" />
 </svelte:head>
 
-<nav class="fixed top-0 left-0 right-0 z-50 px-6 py-4 transition-all duration-300">
+<!-- Intro Loader -->
+{#if showIntro}
+	<IntroLoader duration={2200} onComplete={() => showIntro = false} />
+{/if}
+
+<nav class="fixed top-0 left-0 right-0 z-50 px-6 py-4 transition-all duration-700 ease-out {showIntro ? 'opacity-0 translate-y-[-10px]' : 'opacity-100 translate-y-0'}">
 	<div class="max-w-7xl mx-auto">
 		<div class="bg-gray-900/40 backdrop-blur-md border border-white/10 rounded-full px-6 py-3 flex items-center justify-between shadow-lg relative z-50">
 			<a href="#top" class="block w-8 h-8 transition-transform hover:scale-110 duration-300" onclick={() => isMenuOpen = false}>
@@ -130,7 +137,7 @@
 	</div>
 </nav>
 
-<main class="relative z-10">
+<main class="relative z-10 transition-all duration-700 ease-out {showIntro ? 'opacity-0' : 'opacity-100'}">
 	{@render children()}
 </main>
 
