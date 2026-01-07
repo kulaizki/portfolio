@@ -18,7 +18,7 @@ export const projects: Project[] = [
       'Multi-chain EIP-712 payroll system with ETH and BSC mainnet support (private repository).',
     longDescription:
       'Multi-chain EIP-712 payroll system with CSV/Sheets ingestion, fee strategies, signature capture, and batch broadcasting across Ethereum and BSC mainnets (code in private repository).',
-    url: 'https://payroll.finance/',
+    url: 'https://app.payroll.finance/',
     imageUrl: '/projects/payroll-min.png',
     technologies: ['Solidity', 'TypeScript', 'Foundry', 'wagmi', 'Next.js', 'RainbowKit', 'Tailwind']
   },
