@@ -11,7 +11,18 @@
 	let rafId: number | null = null;
 	let isMenuOpen = $state(false);
 	let showIntro = $state(true);
-	
+
+	// Lock/unlock scroll based on intro state
+	$effect(() => {
+		if (showIntro) {
+			document.body.style.overflow = 'hidden';
+			lenisInstance?.stop();
+		} else {
+			document.body.style.overflow = '';
+			lenisInstance?.start();
+		}
+	});
+
 	onMount(() => {
 		// Initialize Lenis
 		lenisInstance = new Lenis({
@@ -25,24 +36,27 @@
 			autoResize: true, // Auto resize on window resize
 			// Prevent Lenis on specific elements (e.g., modals, dropdowns)
 			prevent: (node) => {
-				return node.hasAttribute('data-lenis-prevent') || 
+				return node.hasAttribute('data-lenis-prevent') ||
 				       node.closest('[data-lenis-prevent]') !== null;
 			},
 		});
-		
+
+		// Stop Lenis initially while intro is showing
+		lenisInstance.stop();
+
 		// Animation frame update
 		function raf(time: number) {
 			lenisInstance?.raf(time);
 			rafId = requestAnimationFrame(raf);
 		}
-		
+
 		rafId = requestAnimationFrame(raf);
-		
+
 		// Handle anchor links
 		const handleAnchorClick = (e: MouseEvent) => {
 			const target = e.target as HTMLElement;
 			const anchor = target.closest('a[href^="#"]') as HTMLAnchorElement;
-			
+
 			if (anchor && lenisInstance) {
 				e.preventDefault();
 				const targetId = anchor.getAttribute('href');
@@ -54,9 +68,9 @@
 				}
 			}
 		};
-		
+
 		document.addEventListener('click', handleAnchorClick);
-		
+
 		return () => {
 			document.removeEventListener('click', handleAnchorClick);
 		};
