@@ -51,7 +51,7 @@
              {isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}"
       style={applyDelay ? 'transition-delay: 200ms' : 'transition-delay: 0ms'}
     >
-      Weaving insights from neuroscience into the world of AI and code.
+      Building tools for better thinking.
     </p>
 
     <!-- Buttons with smooth scale and fade -->
