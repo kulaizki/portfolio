@@ -92,6 +92,17 @@ export const projects: Project[] = [
 export const experiences: Experience[] = [
 
   {
+    title: 'Chief Technology Officer, Co-Founder',
+    company: 'Declut',
+    date: 'July 2025 - Present',
+    responsibilities: [
+      'Solo developed iOS app & websites, handling everything software engineering, and lead all tech-related business decisions.'
+    ],
+    link: 'https://www.declut.io/',
+    imageUrl: '/experiences/declut-banner.png',
+    technologies: ['React Native', 'Expo', 'Posthog', 'Testflight', 'iOS', 'Google Cloud', 'Supabase']
+  },
+  {
     title: 'Software Engineer, AI/ML',
     company: 'Zaigo Labs',
     date: 'June 2025 - Present',
