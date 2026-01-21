@@ -108,9 +108,9 @@
 			
 			<!-- Desktop Menu -->
 			<div class="hidden md:flex items-center gap-8">
+				<a href="#skills" class="text-sm text-gray-300 hover:text-white transition-colors">Skills</a>
 				<a href="#experience" class="text-sm text-gray-300 hover:text-white transition-colors">Experience</a>
 				<a href="#projects" class="text-sm text-gray-300 hover:text-white transition-colors">Projects</a>
-				<a href="#skills" class="text-sm text-gray-300 hover:text-white transition-colors">Skills</a>
 				<a href="#contact" class="px-4 py-2 bg-white text-black rounded-full text-sm font-medium hover:bg-gray-200 transition-colors">Contact</a>
 			</div>
 
@@ -141,9 +141,9 @@
 				transition:fade={{ duration: 300 }}
 			>
 				<div class="flex flex-col items-center gap-8" in:fly={{ y: 20, duration: 400, delay: 150 }} out:fly={{ y: 20, duration: 200 }}>
+					<a href="#skills" class="text-3xl text-gray-300 hover:text-white transition-colors font-light tracking-wide">Skills</a>
 					<a href="#experience" class="text-3xl text-gray-300 hover:text-white transition-colors font-light tracking-wide">Experience</a>
 					<a href="#projects" class="text-3xl text-gray-300 hover:text-white transition-colors font-light tracking-wide">Projects</a>
-					<a href="#skills" class="text-3xl text-gray-300 hover:text-white transition-colors font-light tracking-wide">Skills</a>
 					<a href="#contact" class="px-8 py-3 bg-white text-black rounded-full text-xl font-medium hover:bg-gray-200 transition-colors mt-4">Contact</a>
 				</div>
 			</div>
