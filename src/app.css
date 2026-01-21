@@ -43,3 +43,19 @@ body {
   scrollbar-width: thin;
   scrollbar-color: rgba(14, 165, 233, 0.7) rgba(31, 41, 55, 0.5);
 }
+
+/* Cube logo animation */
+@keyframes cube-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.12);
+    opacity: 1;
+  }
+}
+
+.animate-cube {
+  animation: cube-pulse 2s ease-in-out infinite;
+}

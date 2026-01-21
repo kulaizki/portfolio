@@ -103,7 +103,7 @@
 	<div class="max-w-7xl mx-auto">
 		<div class="bg-gray-900/40 backdrop-blur-md border border-white/10 rounded-full px-6 py-3 flex items-center justify-between shadow-lg relative z-50">
 			<a href="#top" class="block w-8 h-8 transition-transform hover:scale-110 duration-300" onclick={() => isMenuOpen = false}>
-				<img src="/images/favicon.png" alt="Fitzsixto" class="w-full h-full" />
+				<img src="/images/favicon.png" alt="Fitzsixto" class="w-full h-full animate-cube" />
 			</a>
 			
 			<!-- Desktop Menu -->
