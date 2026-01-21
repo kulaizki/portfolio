@@ -41,14 +41,7 @@
     <div class="gap-4 max-w-6xl mx-auto px-6 flex flex-col-reverse md:flex-row justify-between items-center">
       <p class="text-sm my-3 text-center md:text-left">
         &copy; {new Date().getFullYear()}
-        <a
-          href="https://github.com/kulaizki"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="[text-shadow:0_0_8px_rgba(0,242,255,0.6)] bg-gradient-to-r from-sky-300 to-sky-600 bg-clip-text text-transparent font-bold transition ease-in-out duration-200 hover:from-sky-400 hover:to-sky-700"
-        >
-          Fitzsixto
-        </a>. All rights reserved.
+        <span class="bg-gradient-to-r from-sky-300 to-sky-600 bg-clip-text text-transparent font-bold">Fitzsixto</span>. All rights reserved.
       </p>
       <div class="flex space-x-4 pt-3 md:pt-0">
         <a
