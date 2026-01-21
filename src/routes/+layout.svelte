@@ -88,7 +88,7 @@
 
 <svelte:head>
 	<title>Fitzsixto</title>
-	<meta name="description" content="Explore Fitz's portfolio featuring expertise in multiple skills." />
+	<meta name="description" content="Building tools for better thinking." />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta charset="UTF-8" />
 	<link rel="icon" href="/images/favicon.png" />
