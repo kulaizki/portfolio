@@ -2,6 +2,17 @@ import type { Project, Experience, Skill } from './types';
 
 export const projects: Project[] = [
   {
+    name: 'Buyanihan',
+    description:
+      'AI-powered cooperative marketplace for Filipino farmers.',
+    longDescription:
+      'Cooperative-operated produce marketplace connecting Filipino farmers directly to consumers. Features AI-powered quality grading, Bayanihan group buy for bulk discounts, and hub-based logistics with route optimization.',
+    url: 'https://buyanihan.fitzsixto.com',
+    imageUrl: '/projects/buyanihan-og-new.png',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind', 'Zustand', 'Gemini API', 'Google Maps API', 'Three.js', 'Framer Motion'],
+    repoUrl: 'https://github.com/kulaizki/buyanihan'
+  },
+  {
     name: 'Pawnz',
     description:
       'Opensea-inspired NFT marketplace prototype (frontend only).',
@@ -64,17 +75,6 @@ export const projects: Project[] = [
     imageUrl: '/projects/z1-min.webp',
     technologies: ['SvelteKit', 'TypeScript', 'OpenDota API','Tailwind', 'Vercel'],
     repoUrl: 'https://github.com/kulaizki/z1'
-  },
-  {
-    name: 'Echo',
-    description:
-      'AI companion for emotional exploration.',
-    longDescription:
-      'AI companion for reflective journaling and emotional exploration, with tone-aware prompts and memory anchored to Supabase storage.',
-    url: 'https://echo.fitzsixto.com',
-    imageUrl: '/projects/echo-chat.webp',
-    technologies: ['SvelteKit', 'Typescript', 'Gemini API', 'Tailwind', 'Vercel'],
-    repoUrl: 'https://github.com/kulaizki/echo'
   },
   {
     name: 'Nexleague',
