@@ -58,7 +58,7 @@
           />
         </a>
         <a
-          href="https://www.linkedin.com/in/kulaizki/"
+          href="https://www.linkedin.com/in/fitzsixto/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
