@@ -43,5 +43,10 @@
 		"svelte-motion": "^0.12.2",
 		"tailwind-merge": "^2.6.0",
 		"three": "^0.175.0"
+	},
+	"pnpm": {
+		"overrides": {
+			"tar": ">=7.5.4"
+		}
 	}
 }
